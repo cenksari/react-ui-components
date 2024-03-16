@@ -5,6 +5,7 @@ import Heading from '../components/Elements/Heading';
 const Buttons = () => (
   <>
     <Row className='margin-bottom'>
+      <a aria-label='b-colored' id='b-colored' href='#b-colored' />
       <Heading type={2} className='gray' text='Gray' />
       <Button type='button' text='The button' className='gray-filled' leftIcon='arrow_forward' />
       &nbsp;&nbsp;
@@ -96,6 +97,7 @@ const Buttons = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='b-disabled' id='b-disabled' href='#b-disabled' />
       <Heading type={2} className='gray' text='Disabled button' />
       <Button type='button' text='The button' className='disabled' />
       <code>

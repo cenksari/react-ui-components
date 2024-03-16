@@ -8,6 +8,7 @@ import TextArea from '../components/Forms/TextArea';
 const FormElements = () => (
   <>
     <Row className='margin-bottom'>
+      <a aria-label='input' id='input' href='#input' />
       <Heading type={2} className='gray' text='Input' />
       <Input name='inp' type='text' className='input-text' placeholder='input placeholder' />
       <code>
@@ -16,6 +17,7 @@ const FormElements = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='textarea' id='textarea' href='#textarea' />
       <Heading type={2} className='gray' text='Textarea' />
       <TextArea name='txt' rows={3} className='input-text' placeholder='Textarea placeholder' />
       <code>
@@ -24,6 +26,7 @@ const FormElements = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='select' id='select' href='#select' />
       <Heading type={2} className='gray' text='Select' />
       <select name='sel' className='select'>
         <option value='1'>Option 1</option>
@@ -49,6 +52,7 @@ const FormElements = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='switch' id='switch' href='#switch' />
       <Heading type={2} className='gray' text='Switch' />
       <Row className='margin-bottom'>
         <Switch name='col' checked description='Gray switch' className='gray' />
@@ -97,6 +101,7 @@ const FormElements = () => (
       </Row>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='radio' id='radio' href='#radio' />
       <Heading type={2} className='gray' text='Radio button' />
       <Row className='margin-bottom'>
         <Radio checked name='fav' description='Gray radio button' className='gray' value='1' />
