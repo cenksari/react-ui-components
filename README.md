@@ -6,6 +6,9 @@ If you like this resource, please follow me on GitHub. Thank you!
 ## Demo
 [https://cenksari.github.io/react-ui-components/](https://cenksari.github.io/react-ui-components/)
 
+## Screenshots
+![Home](https://github.com/cenksari/react-ui-components/blob/main/screenshots/screenshot1.png?raw=true)
+
 ## Authors
 @cenksari
 
