@@ -1,7 +1,8 @@
 {
   "name": "react-ui-components",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
+  "homepage": "https://cenksari.github.io/react-ui-components",
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
