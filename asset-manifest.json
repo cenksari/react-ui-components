@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/react-ui-components/static/js/main.c68cf4af.js",
-    "index.html": "/react-ui-components/index.html",
-    "main.c68cf4af.js.map": "/react-ui-components/static/js/main.c68cf4af.js.map"
+    "main.js": "/static/js/main.c68cf4af.js",
+    "index.html": "/index.html",
+    "main.c68cf4af.js.map": "/static/js/main.c68cf4af.js.map"
   },
   "entrypoints": [
     "static/js/main.c68cf4af.js"
