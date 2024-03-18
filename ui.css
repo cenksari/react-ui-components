@@ -41,6 +41,32 @@ body {
   background-color: var(--white);
 }
 
+code {
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  padding: 60px 40px 30px 40px;
+  font-family: Consolas, "courier new";
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+code::before {
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  font-size: 0.9em;
+  content: '<Code />';
+  font-weight: 800;
+  color: #ffffff;
+  user-select: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #999999;
+}
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -614,6 +640,67 @@ button.disabled {
   vertical-align: middle;
 }
 
+.profile-photo .avatar {
+  display: flex;
+  user-select: none;
+  color: var(--white);
+  border-radius: 50em;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo .avatar.big {
+  width: 300px;
+  height: 300px;
+  font-size: 7em;
+}
+
+.profile-photo .avatar.large {
+  width: 225px;
+  height: 225px;
+  font-size: 5em;
+}
+
+.profile-photo .avatar.medium {
+  width: 150px;
+  height: 150px;
+  font-size: 3em;
+}
+
+.profile-photo .avatar.small {
+  width: 50px;
+  height: 50px;
+  font-size: 1em;
+}
+
+.profile-photo .avatar.gray {
+  background-color: var(--gray);
+}
+
+.profile-photo .avatar.yellow {
+  background-color: var(--yellow);
+}
+
+.profile-photo .avatar.purple {
+  background-color: var(--purple);
+}
+
+.profile-photo .avatar.red {
+  background-color: var(--red);
+}
+
+.profile-photo .avatar.orange {
+  background-color: var(--orange);
+}
+
+.profile-photo .avatar.green {
+  background-color: var(--green);
+}
+
+.profile-photo .avatar.blue {
+  background-color: var(--blue);
+}
+
 /* Tabs */
 .tabs {
   padding: 0;
@@ -686,15 +773,6 @@ button.disabled {
 .tabs .tab-bar.blue .tab a.active,
 .tabs .tab-bar.blue .tab button.active {
   background-color: var(--blue);
-}
-
-code {
-  padding: 20px;
-  display: block;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: #f5f5f5;
-  font-family: Consolas, "courier new";
 }
 
 /* Cards */
@@ -774,4 +852,39 @@ code {
 .small-card .card-buttons button {
   font-size: 0.9em;
   padding: 15px 25px;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.alert i {
+  width: 25px;
+  height: 25px;
+  user-select: none;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+.alert.info {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.alert.error {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.alert.warning {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.alert.success {
+  color: var(--white);
+  background-color: var(--green);
 }
