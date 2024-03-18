@@ -2,6 +2,7 @@ import Row from './components/Containers/Row';
 import Heading from './components/Elements/Heading';
 
 import Cards from './pages/Cards';
+import Alerts from './pages/Alerts';
 import Buttons from './pages/Buttons';
 import Tabbars from './pages/Tabbars';
 import Headings from './pages/Headings';
@@ -97,6 +98,21 @@ function App() {
           <li className='indent'>
             <a href='#c-small'>Small card</a>
           </li>
+          <li>
+            <a href='#alerts'>Alerts</a>
+          </li>
+          <li className='indent'>
+            <a href='#a-info'>Info</a>
+          </li>
+          <li className='indent'>
+            <a href='#a-error'>Error</a>
+          </li>
+          <li className='indent'>
+            <a href='#a-warning'>Warning</a>
+          </li>
+          <li className='indent'>
+            <a href='#a-success'>Success</a>
+          </li>
         </ul>
       </div>
       <div className='content'>
@@ -162,6 +178,13 @@ function App() {
           <p className='gray'>Card components. You can also use color tags for buttons.</p>
         </Row>
         <Cards />
+
+        <Row className='margin-bottom'>
+          <a aria-label='alerts' id='alerts' href='#alerts' />
+          <Heading type={1} className='black' text='Alerts' />
+          <p className='gray'>Alert components.</p>
+        </Row>
+        <Alerts />
       </div>
     </div>
   );

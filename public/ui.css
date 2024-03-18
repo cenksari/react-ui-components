@@ -41,6 +41,32 @@ body {
   background-color: var(--white);
 }
 
+code {
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  padding: 60px 40px 30px 40px;
+  font-family: Consolas, "courier new";
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+code::before {
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  font-size: 0.9em;
+  content: '<Code />';
+  font-weight: 800;
+  color: #ffffff;
+  user-select: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #999999;
+}
+
 ul, li {
   margin: 0;
   padding: 0;
@@ -749,15 +775,6 @@ button.disabled {
   background-color: var(--blue);
 }
 
-code {
-  padding: 20px;
-  display: block;
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: #f5f5f5;
-  font-family: Consolas, "courier new";
-}
-
 /* Cards */
 .card {
   border-radius: 10px;
@@ -835,4 +852,39 @@ code {
 .small-card .card-buttons button {
   font-size: 0.9em;
   padding: 15px 25px;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.alert i {
+  width: 25px;
+  height: 25px;
+  user-select: none;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+.alert.info {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.alert.error {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.alert.warning {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.alert.success {
+  color: var(--white);
+  background-color: var(--green);
 }
