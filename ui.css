@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&family=Material+Icons&display=swap&subset=latin,latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Material+Icons&display=swap&subset=latin,latin-ext');
 
 :root {
   --red: #f42d53;
@@ -20,9 +20,10 @@ html, body, input, select, textarea, button, p, span, div, i, em, img, table, tr
   padding: 0;
   border: none;
   outline: none;
-  font-size: 1.05em;
+  font-weight: 400;
   border-radius: 0;
   appearance: none;
+  font-size: 1.05em;
   font-style: normal;
   box-sizing: border-box;
   vertical-align: baseline;
@@ -66,6 +67,10 @@ ul li.indent {
 p {
   line-height: 160%;
   margin-bottom: 15px;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 h1 {
@@ -159,6 +164,10 @@ select {
   justify-content: space-between;
 }
 
+.flex-space-around {
+  justify-content: space-around;
+}
+
 .gray {
   color: var(--gray);
 }
@@ -194,7 +203,7 @@ select {
 /* Buttons */
 button {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   user-select: none;
   line-height: 100%;
   padding: 20px 50px;
@@ -686,4 +695,83 @@ code {
   border-radius: 10px;
   background-color: #f5f5f5;
   font-family: Consolas, "courier new";
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--dark-gray);
+}
+
+.card-title {
+  padding: 20px 10px 20px 20px;
+}
+
+.card-title button {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.card-title h6 {
+  margin-bottom: 0;
+}
+
+.card-title button i {
+  margin-top: 0;
+}
+
+.card-image {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-buttons {
+  padding-bottom: 25px;
+}
+
+.large-card {
+  width: 100%;
+}
+
+.medium-card {
+  width: 50%;
+}
+
+.small-card {
+  width: 33.33%;
+}
+
+.medium-card .card-title h6 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.medium-card .card-content p {
+  font-size: 1em;
+}
+
+.medium-card .card-buttons button {
+  font-size: 1em;
+  padding: 20px 35px;
+}
+
+.small-card .card-title h6 {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.small-card .card-content p {
+  font-size: 0.9em;
+}
+
+.small-card .card-buttons button {
+  font-size: 0.9em;
+  padding: 15px 25px;
 }
