@@ -64,26 +64,23 @@ const ProfilePhotos = () => (
       <ProfilePhoto text='CS' size='small' className='green' />
       <ProfilePhoto text='CS' size='small' className='blue' />
       <code>
-        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
-        className=&quot;gray&quot; /&gt;
+        &lt;ProfilePhoto text=&quot;CS&quot; size=&quot;small&quot; className=&quot;gray&quot; /&gt;
         <br />
-        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
-        className=&quot;yellow&quot; /&gt;
-        <br />
-        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
-        className=&quot;purple&quot; /&gt;
-        <br />
-        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot; className=&quot;red&quot;
+        &lt;ProfilePhoto text=&quot;CS&quot; size=&quot;small&quot; className=&quot;yellow&quot;
         /&gt;
         <br />
-        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
-        className=&quot;orange&quot; /&gt;
+        &lt;ProfilePhoto text=&quot;CS&quot; size=&quot;small&quot; className=&quot;purple&quot;
+        /&gt;
         <br />
-        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
-        className=&quot;green&quot; /&gt;
+        &lt;ProfilePhoto text=&quot;CS&quot; size=&quot;small&quot; className=&quot;red&quot; /&gt;
         <br />
-        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
-        className=&quot;blue&quot; /&gt;
+        &lt;ProfilePhoto text=&quot;CS&quot; size=&quot;small&quot; className=&quot;orange&quot;
+        /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;CS&quot; size=&quot;small&quot; className=&quot;green&quot;
+        /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;CS&quot; size=&quot;small&quot; className=&quot;blue&quot; /&gt;
       </code>
     </Row>
   </>

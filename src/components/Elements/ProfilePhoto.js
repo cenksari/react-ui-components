@@ -23,13 +23,14 @@ ProfilePhoto.defaultProps = {
   size: 'small',
   text: null,
   className: null,
+  image: null,
 };
 
 ProfilePhoto.propTypes = {
   size: PropTypes.string,
   text: PropTypes.string,
   className: PropTypes.string,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string,
 };
 
 export default ProfilePhoto;
