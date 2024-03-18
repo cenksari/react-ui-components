@@ -614,6 +614,67 @@ button.disabled {
   vertical-align: middle;
 }
 
+.profile-photo .avatar {
+  display: flex;
+  user-select: none;
+  color: var(--white);
+  border-radius: 50em;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-photo .avatar.big {
+  width: 300px;
+  height: 300px;
+  font-size: 7em;
+}
+
+.profile-photo .avatar.large {
+  width: 225px;
+  height: 225px;
+  font-size: 5em;
+}
+
+.profile-photo .avatar.medium {
+  width: 150px;
+  height: 150px;
+  font-size: 3em;
+}
+
+.profile-photo .avatar.small {
+  width: 50px;
+  height: 50px;
+  font-size: 1em;
+}
+
+.profile-photo .avatar.gray {
+  background-color: var(--gray);
+}
+
+.profile-photo .avatar.yellow {
+  background-color: var(--yellow);
+}
+
+.profile-photo .avatar.purple {
+  background-color: var(--purple);
+}
+
+.profile-photo .avatar.red {
+  background-color: var(--red);
+}
+
+.profile-photo .avatar.orange {
+  background-color: var(--orange);
+}
+
+.profile-photo .avatar.green {
+  background-color: var(--green);
+}
+
+.profile-photo .avatar.blue {
+  background-color: var(--blue);
+}
+
 /* Tabs */
 .tabs {
   padding: 0;

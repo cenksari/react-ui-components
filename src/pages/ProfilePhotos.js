@@ -53,6 +53,39 @@ const ProfilePhotos = () => (
         text=&quot;Cenk SARI&quot; size=&quot;small&quot; /&gt;
       </code>
     </Row>
+    <Row className='margin-bottom'>
+      <a aria-label='pp-avatar' id='pp-avatar' href='#pp-avatar' />
+      <Heading type={2} className='gray' text='Text avatar' />
+      <ProfilePhoto text='CS' size='small' className='gray' />
+      <ProfilePhoto text='CS' size='small' className='yellow' />
+      <ProfilePhoto text='CS' size='small' className='purple' />
+      <ProfilePhoto text='CS' size='small' className='red' />
+      <ProfilePhoto text='CS' size='small' className='orange' />
+      <ProfilePhoto text='CS' size='small' className='green' />
+      <ProfilePhoto text='CS' size='small' className='blue' />
+      <code>
+        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
+        className=&quot;gray&quot; /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
+        className=&quot;yellow&quot; /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
+        className=&quot;purple&quot; /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot; className=&quot;red&quot;
+        /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
+        className=&quot;orange&quot; /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
+        className=&quot;green&quot; /&gt;
+        <br />
+        &lt;ProfilePhoto text=&quot;Cenk SARI&quot; size=&quot;small&quot;
+        className=&quot;blue&quot; /&gt;
+      </code>
+    </Row>
   </>
 );
 

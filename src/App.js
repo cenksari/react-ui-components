@@ -58,6 +58,9 @@ function App() {
           <li className='indent'>
             <a href='#pp-text'>with text</a>
           </li>
+          <li className='indent'>
+            <a href='#pp-avatar'>Text avatar</a>
+          </li>
           <li>
             <a href='#tabs'>Tabs</a>
           </li>
