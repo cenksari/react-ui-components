@@ -5,7 +5,7 @@ import Heading from '../components/Elements/Heading';
 const Buttons = () => (
   <>
     <Row className='margin-bottom'>
-      <a aria-label='b-colored' id='b-colored' href='#b-colored' />
+      <a aria-label='b-gray' id='b-gray' href='#b-gray' />
       <Heading type={2} className='gray' text='Gray' />
       <Button type='button' text='The button' className='gray-filled' leftIcon='arrow_forward' />
       &nbsp;&nbsp;
@@ -19,6 +19,7 @@ const Buttons = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='b-yellow' id='b-yellow' href='#b-yellow' />
       <Heading type={2} className='yellow' text='Yellow' />
       <Button type='button' text='The button' className='yellow-filled' />
       &nbsp;&nbsp;
@@ -32,6 +33,7 @@ const Buttons = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='b-purple' id='b-purple' href='#b-purple' />
       <Heading type={2} className='purple' text='Purple' />
       <Button type='button' text='The button' className='purple-filled' />
       &nbsp;&nbsp;
@@ -45,6 +47,7 @@ const Buttons = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='b-red' id='b-red' href='#b-red' />
       <Heading type={2} className='red' text='Red' />
       <Button type='button' text='The button' className='red-filled' />
       &nbsp;&nbsp;
@@ -58,6 +61,7 @@ const Buttons = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='b-orange' id='b-orange' href='#b-orange' />
       <Heading type={2} className='orange' text='Orange' />
       <Button type='button' text='The button' className='orange-filled' />
       &nbsp;&nbsp;
@@ -71,6 +75,7 @@ const Buttons = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='b-green' id='b-green' href='#b-green' />
       <Heading type={2} className='green' text='Green' />
       <Button type='button' text='The button' className='green-filled' />
       &nbsp;&nbsp;
@@ -84,6 +89,7 @@ const Buttons = () => (
       </code>
     </Row>
     <Row className='margin-bottom'>
+      <a aria-label='b-blue' id='b-blue' href='#b-blue' />
       <Heading type={2} className='blue' text='Blue' />
       <Button type='button' text='The button' className='blue-filled' />
       &nbsp;&nbsp;

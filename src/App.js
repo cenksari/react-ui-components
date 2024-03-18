@@ -1,7 +1,9 @@
 import Row from './components/Containers/Row';
+import Menu from './pages/Menu';
 import Heading from './components/Elements/Heading';
 
 import Cards from './pages/Cards';
+import Badges from './pages/Badges';
 import Alerts from './pages/Alerts';
 import Buttons from './pages/Buttons';
 import Tabbars from './pages/Tabbars';
@@ -12,109 +14,7 @@ import ProfilePhotos from './pages/ProfilePhotos';
 function App() {
   return (
     <div className='container'>
-      <div className='menu'>
-        <ul>
-          <li>
-            <a href='#buttons'>Buttons</a>
-          </li>
-          <li className='indent'>
-            <a href='#b-colored'>Colored</a>
-          </li>
-          <li className='indent'>
-            <a href='#b-disabled'>Disabled</a>
-          </li>
-          <li>
-            <a href='#form-elements'>Form elements</a>
-          </li>
-          <li className='indent'>
-            <a href='#input'>Input</a>
-          </li>
-          <li className='indent'>
-            <a href='#textarea'>Textarea</a>
-          </li>
-          <li className='indent'>
-            <a href='#select'>Select</a>
-          </li>
-          <li className='indent'>
-            <a href='#switch'>Switch</a>
-          </li>
-          <li className='indent'>
-            <a href='#radio'>Radio button</a>
-          </li>
-          <li>
-            <a href='#profile-photos'>Profile photos</a>
-          </li>
-          <li className='indent'>
-            <a href='#pp-big'>Big</a>
-          </li>
-          <li className='indent'>
-            <a href='#pp-large'>Large</a>
-          </li>
-          <li className='indent'>
-            <a href='#pp-medium'>Medium</a>
-          </li>
-          <li className='indent'>
-            <a href='#pp-small'>Small</a>
-          </li>
-          <li className='indent'>
-            <a href='#pp-text'>with text</a>
-          </li>
-          <li className='indent'>
-            <a href='#pp-avatar'>Text avatar</a>
-          </li>
-          <li>
-            <a href='#tabs'>Tabs</a>
-          </li>
-          <li>
-            <a href='#headings'>Headings</a>
-          </li>
-          <li className='indent'>
-            <a href='#h1'>Heading 1</a>
-          </li>
-          <li className='indent'>
-            <a href='#h2'>Heading 2</a>
-          </li>
-          <li className='indent'>
-            <a href='#h3'>Heading 3</a>
-          </li>
-          <li className='indent'>
-            <a href='#h4'>Heading 4</a>
-          </li>
-          <li className='indent'>
-            <a href='#h5'>Heading 5</a>
-          </li>
-          <li className='indent'>
-            <a href='#h6'>Heading 6</a>
-          </li>
-          <li>
-            <a href='#cards'>Cards</a>
-          </li>
-          <li className='indent'>
-            <a href='#c-large'>Large card</a>
-          </li>
-          <li className='indent'>
-            <a href='#c-medium'>Medium card</a>
-          </li>
-          <li className='indent'>
-            <a href='#c-small'>Small card</a>
-          </li>
-          <li>
-            <a href='#alerts'>Alerts</a>
-          </li>
-          <li className='indent'>
-            <a href='#a-info'>Info</a>
-          </li>
-          <li className='indent'>
-            <a href='#a-error'>Error</a>
-          </li>
-          <li className='indent'>
-            <a href='#a-warning'>Warning</a>
-          </li>
-          <li className='indent'>
-            <a href='#a-success'>Success</a>
-          </li>
-        </ul>
-      </div>
+      <Menu />
       <div className='content'>
         <Row className='margin-bottom'>
           <Heading type={1} className='black' text='React UI Components' />
@@ -185,6 +85,13 @@ function App() {
           <p className='gray'>Alert components.</p>
         </Row>
         <Alerts />
+
+        <Row className='margin-bottom'>
+          <a aria-label='badges' id='badges' href='#badges' />
+          <Heading type={1} className='black' text='Badges' />
+          <p className='gray'>Badge components.</p>
+        </Row>
+        <Badges />
       </div>
     </div>
   );
