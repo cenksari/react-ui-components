@@ -3,39 +3,13 @@
   --blue: #0a56ea;
   --gray: #3e4649;
   --black: #333333;
-  --green: #1ce4d5;
+  --green: #4ed34e  ;
   --white: #ffffff;
   --yellow: #ffca0c;
   --purple: #8852f6;
   --orange: #ff810d;
   --dark-gray: #999999;
   --light-gray: #f5f5f5;
-}
-
-code {
-  display: block;
-  margin-top: 20px;
-  position: relative;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #f1f1f1;
-  padding: 60px 40px 30px 40px;
-  font-family: Consolas, "courier new";
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
-
-code::before {
-  top: 10px;
-  left: 10px;
-  padding: 5px;
-  font-size: 0.9em;
-  content: '<Code />';
-  font-weight: 800;
-  color: #ffffff;
-  user-select: none;
-  position: absolute;
-  border-radius: 5px;
-  background-color: #999999;
 }
 
 h1 {
@@ -90,6 +64,10 @@ input, select, textarea {
 
 select {
   cursor: pointer;
+}
+
+strong {
+  font-weight: 800;
 }
 
 .row {
@@ -327,6 +305,7 @@ button.disabled {
 }
 
 .select {
+  color: var(--black);
   border: 1px solid var(--dark-gray);
   background-repeat: no-repeat;
   background-position: 99% center;
@@ -334,6 +313,7 @@ button.disabled {
 }
 
 .select * {
+  color: var(--black);
   background-color: var(--light-gray);
 }
 
@@ -848,4 +828,233 @@ button.disabled {
 
 .badge.blue {
   background-color: var(--blue);
+}
+
+/* Loaders */
+.loader-backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  z-index: 99999999;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.loader {
+  display: inline-block;
+}
+
+.loader.gray {
+  fill: var(--gray);
+}
+
+.loader.yellow {
+  fill: var(--yellow);
+}
+
+.loader.purple {
+  fill: var(--purple);
+}
+
+.loader.red {
+  fill: var(--red);
+}
+
+.loader.orange {
+  fill: var(--orange);
+}
+
+.loader.green {
+  fill: var(--green);
+}
+
+.loader.blue {
+  fill: var(--blue);
+}
+
+/* Dropdowns */
+.dropdown {
+  border-radius: 10px;
+  background-color: var(--light-gray);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.dropdown button {
+  width: 100%;
+  line-height: 1;
+  text-align: left;
+  border-radius: 0;
+  margin: 0 !important;
+  display: block !important;
+  padding: 13px 10px !important;
+}
+
+.dropdown button:hover {
+  transform: none;
+  color: var(--white);
+}
+
+.dropdown button.active {
+  color: var(--white);
+  pointer-events: none;
+}
+
+.dropdown button:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.dropdown button:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dropdown hr {
+  margin: 0;
+  height: 0;
+  padding: 0;
+  border: 1px solid var(--white);
+}
+
+.dropdown.gray button:hover,
+.dropdown.gray button.active {
+  background-color: var(--gray);
+}
+
+.dropdown.yellow button:hover,
+.dropdown.yellow button.active {
+  background-color: var(--yellow);
+}
+
+.dropdown.purple button:hover,
+.dropdown.purple button.active {
+  background-color: var(--purple);
+}
+
+.dropdown.red button:hover,
+.dropdown.red button.active {
+  background-color: var(--red);
+}
+
+.dropdown.orange button:hover,
+.dropdown.orange button.active {
+  background-color: var(--orange);
+}
+
+.dropdown.green button:hover,
+.dropdown.green button.active {
+  background-color: var(--green);
+}
+
+.dropdown.blue button:hover,
+.dropdown.blue button.active {
+  background-color: var(--blue);
+}
+
+/* Modals */
+.modal-backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  z-index: 99999999;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.dialog {
+  padding: 20px;
+  min-width: 55%;
+  max-width: 95%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.dialog .title {
+  user-select: none;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.dialog .title h4 {
+  margin-bottom: 0;
+}
+
+.dialog .title button {
+  width: 30px;
+  height: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  border-radius: 0 !important;
+}
+
+.dialog .title button:hover {
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 4px !important;
+}
+
+.dialog .title button:hover {
+  transform: none;
+}
+
+.dialog .title button i {
+  margin-top: 0 !important;
+}
+
+.dialog .buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.dialog .buttons button {
+  margin: 0 5px;
+}
+
+/* Modals */
+.modal {
+  padding: 20px;
+  min-width: 55%;
+  max-width: 95%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.modal .title {
+  text-align: right;
+}
+
+.modal .title button {
+  width: 30px;
+  height: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  border-radius: 0 !important;
+}
+
+.modal .title button:hover {
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 4px !important;
+}
+
+.modal .title button:hover {
+  transform: none;
+}
+
+.modal .title button i {
+  margin-top: 0 !important;
 }
