@@ -679,6 +679,13 @@ button.disabled {
   background-color: var(--blue);
 }
 
+.tab-content {
+  padding: 10px;
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+}
+
 /* Cards */
 .card {
   border-radius: 10px;

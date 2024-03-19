@@ -1,6 +1,7 @@
 import Row from '../components/Containers/Row';
 import Tab from '../components/Elements/Tab';
 import Tabs from '../components/Elements/Tabs';
+import TabContent from '../components/Elements/TabContent';
 
 const Tabbars = () => (
   <>
@@ -10,6 +11,9 @@ const Tabbars = () => (
         <Tab text='Tab 2' />
         <Tab text='Tab 3' />
       </Tabs>
+      <TabContent>
+        <p>Tab content</p>
+      </TabContent>
       <code>
         &lt;Tabs color=&quot;gray&quot;&gt;
         <br />
@@ -23,6 +27,13 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
+        <br />
+        &lt;TabContent&gt;
+        <br />
+        <span className='tab' />
+        Tab content
+        <br />
+        &lt;/TabContent&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -31,6 +42,9 @@ const Tabbars = () => (
         <Tab text='Tab 2' />
         <Tab text='Tab 3' />
       </Tabs>
+      <TabContent>
+        <p>Tab content</p>
+      </TabContent>
       <code>
         &lt;Tabs color=&quot;yellow&quot;&gt;
         <br />
@@ -44,6 +58,13 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
+        <br />
+        &lt;TabContent&gt;
+        <br />
+        <span className='tab' />
+        Tab content
+        <br />
+        &lt;/TabContent&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -52,6 +73,9 @@ const Tabbars = () => (
         <Tab text='Tab 2' />
         <Tab text='Tab 3' />
       </Tabs>
+      <TabContent>
+        <p>Tab content</p>
+      </TabContent>
       <code>
         &lt;Tabs color=&quot;purple&quot;&gt;
         <br />
@@ -65,6 +89,13 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
+        <br />
+        &lt;TabContent&gt;
+        <br />
+        <span className='tab' />
+        Tab content
+        <br />
+        &lt;/TabContent&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -73,6 +104,9 @@ const Tabbars = () => (
         <Tab text='Tab 2' />
         <Tab text='Tab 3' />
       </Tabs>
+      <TabContent>
+        <p>Tab content</p>
+      </TabContent>
       <code>
         &lt;Tabs color=&quot;red&quot;&gt;
         <br />
@@ -86,6 +120,13 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
+        <br />
+        &lt;TabContent&gt;
+        <br />
+        <span className='tab' />
+        Tab content
+        <br />
+        &lt;/TabContent&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -94,6 +135,9 @@ const Tabbars = () => (
         <Tab text='Tab 2' />
         <Tab text='Tab 3' />
       </Tabs>
+      <TabContent>
+        <p>Tab content</p>
+      </TabContent>
       <code>
         &lt;Tabs color=&quot;orange&quot;&gt;
         <br />
@@ -107,6 +151,13 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
+        <br />
+        &lt;TabContent&gt;
+        <br />
+        <span className='tab' />
+        Tab content
+        <br />
+        &lt;/TabContent&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -115,6 +166,9 @@ const Tabbars = () => (
         <Tab text='Tab 2' />
         <Tab text='Tab 3' />
       </Tabs>
+      <TabContent>
+        <p>Tab content</p>
+      </TabContent>
       <code>
         &lt;Tabs color=&quot;green&quot;&gt;
         <br />
@@ -128,6 +182,13 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
+        <br />
+        &lt;TabContent&gt;
+        <br />
+        <span className='tab' />
+        Tab content
+        <br />
+        &lt;/TabContent&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -136,6 +197,9 @@ const Tabbars = () => (
         <Tab text='Tab 2' />
         <Tab text='Tab 3' />
       </Tabs>
+      <TabContent>
+        <p>Tab content</p>
+      </TabContent>
       <code>
         &lt;Tabs color=&quot;blue&quot;&gt;
         <br />
@@ -149,6 +213,13 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
+        <br />
+        &lt;TabContent&gt;
+        <br />
+        <span className='tab' />
+        Tab content
+        <br />
+        &lt;/TabContent&gt;
       </code>
     </Row>
   </>

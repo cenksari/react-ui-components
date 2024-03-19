@@ -30,12 +30,16 @@ const Alert = memo(({ text, type }) => {
     );
   }
 
-  return (
-    <div className='alert success'>
-      <i className='material-icons'>check_circle</i>
-      {text}
-    </div>
-  );
+  if (type === 'success') {
+    return (
+      <div className='alert success'>
+        <i className='material-icons'>check_circle</i>
+        {text}
+      </div>
+    );
+  }
+
+  return null;
 });
 
 Alert.propTypes = {
