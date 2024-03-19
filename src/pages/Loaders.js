@@ -1,6 +1,7 @@
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 import Loader from '../components/Elements/Loader';
+import Button from '../components/Buttons/Button';
 
 const Loaders = () => (
   <>
@@ -39,6 +40,8 @@ const Loaders = () => (
     <Row className='margin-bottom'>
       <a aria-label='l-full' id='l-full' href='#l-full' />
       <Heading type={2} color='gray' text='Full screen' />
+      <Button type='button' text='Open full screen loader' color='blue-filled' />
+      <code>deneme</code>
     </Row>
   </>
 );

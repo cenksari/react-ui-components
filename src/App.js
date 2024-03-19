@@ -121,7 +121,7 @@ function App() {
         <Row className='margin-bottom'>
           <a aria-label='dropdowns' id='dropdowns' href='#dropdowns' />
           <Heading type={1} color='black' text='Dropdown' />
-          <p className='gray'>Dropdown components.</p>
+          <p className='gray'>Dropdown components. You can also use color tags.</p>
         </Row>
         <Dropdowns />
       </div>
