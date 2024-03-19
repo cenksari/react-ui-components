@@ -21,7 +21,7 @@ const FormElements = () => (
       <Heading type={2} color='gray' text='Textarea' />
       <TextArea name='txt' rows={3} placeholder='Textarea placeholder' />
       <code>
-        &lt;TextArea name=&quot;txt&quot; rows={3} placeholder=&quot;Textarea placeholder&quot;
+        &lt;TextArea name=&quot;txt&quot; rows={'{3}'} placeholder=&quot;Textarea placeholder&quot;
         /&gt;
       </code>
     </Row>
@@ -38,14 +38,19 @@ const FormElements = () => (
       <code>
         &lt;select name=&quot;sel&quot; className=&quot;select&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;option value=&quot;1&quot;&gt;Option 1&lt;/option&gt;
         <br />
+        <span className='tab' />
         &lt;option value=&quot;2&quot;&gt;Option 2&lt;/option&gt;
         <br />
+        <span className='tab' />
         &lt;option value=&quot;3&quot;&gt;Option 3&lt;/option&gt;
         <br />
+        <span className='tab' />
         &lt;option value=&quot;4&quot;&gt;Option 4&lt;/option&gt;
         <br />
+        <span className='tab' />
         &lt;option value=&quot;5&quot;&gt;Option 5&lt;/option&gt;
         <br />
         &lt;/select&gt;
@@ -54,6 +59,7 @@ const FormElements = () => (
     <Row className='margin-bottom'>
       <a aria-label='switch' id='switch' href='#switch' />
       <Heading type={2} color='gray' text='Switch' />
+      <p className='gray'>You can also use color tags.</p>
       <Row className='margin-bottom'>
         <Switch name='col' checked description='Gray switch' color='gray' />
       </Row>
@@ -103,6 +109,7 @@ const FormElements = () => (
     <Row className='margin-bottom'>
       <a aria-label='radio' id='radio' href='#radio' />
       <Heading type={2} color='gray' text='Radio button' />
+      <p className='gray'>You can also use color tags.</p>
       <Row className='margin-bottom'>
         <Radio checked name='fav' description='Gray radio button' color='gray' value='1' />
       </Row>

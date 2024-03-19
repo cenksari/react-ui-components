@@ -56,6 +56,7 @@ const ProfilePhotos = () => (
     <Row className='margin-bottom'>
       <a aria-label='pp-avatar' id='pp-avatar' href='#pp-avatar' />
       <Heading type={2} color='gray' text='Text avatar' />
+      <p className='gray'>You can also use color tags.</p>
       <ProfilePhoto text='CS' size='small' color='gray' />
       <ProfilePhoto text='CS' size='small' color='yellow' />
       <ProfilePhoto text='CS' size='small' color='purple' />

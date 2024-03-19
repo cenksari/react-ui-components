@@ -48,12 +48,6 @@ h6 {
   margin: 0 0 10px 0;
 }
 
-h7 {
-  font-size: 1em;
-  font-weight: 800;
-  margin: 0 0 10px 0;
-}
-
 input, select, textarea, button {
   padding: 15px;
   overflow: auto;
@@ -70,6 +64,10 @@ input, select, textarea {
 
 select {
   cursor: pointer;
+}
+
+strong {
+  font-weight: 800;
 }
 
 .row {
@@ -833,6 +831,19 @@ button.disabled {
 }
 
 /* Loaders */
+.loader-backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  z-index: 99999999;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
 .loader {
   display: inline-block;
 }
@@ -942,4 +953,108 @@ button.disabled {
 .dropdown.blue button:hover,
 .dropdown.blue button.active {
   background-color: var(--blue);
+}
+
+/* Modals */
+.modal-backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  z-index: 99999999;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.dialog {
+  padding: 20px;
+  min-width: 55%;
+  max-width: 95%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.dialog .title {
+  user-select: none;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.dialog .title h4 {
+  margin-bottom: 0;
+}
+
+.dialog .title button {
+  width: 30px;
+  height: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  border-radius: 0 !important;
+}
+
+.dialog .title button:hover {
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 4px !important;
+}
+
+.dialog .title button:hover {
+  transform: none;
+}
+
+.dialog .title button i {
+  margin-top: 0 !important;
+}
+
+.dialog .buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.dialog .buttons button {
+  margin: 0 5px;
+}
+
+/* Modals */
+.modal {
+  padding: 20px;
+  min-width: 55%;
+  max-width: 95%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.modal .title {
+  text-align: right;
+}
+
+.modal .title button {
+  width: 30px;
+  height: 30px;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  border-radius: 0 !important;
+}
+
+.modal .title button:hover {
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 4px !important;
+}
+
+.modal .title button:hover {
+  transform: none;
+}
+
+.modal .title button i {
+  margin-top: 0 !important;
 }

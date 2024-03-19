@@ -13,10 +13,13 @@ const Tabbars = () => (
       <code>
         &lt;Tabs color=&quot;gray&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 2&quot; /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
@@ -31,10 +34,13 @@ const Tabbars = () => (
       <code>
         &lt;Tabs color=&quot;yellow&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 2&quot; /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
@@ -49,10 +55,13 @@ const Tabbars = () => (
       <code>
         &lt;Tabs color=&quot;purple&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 2&quot; /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
@@ -67,10 +76,13 @@ const Tabbars = () => (
       <code>
         &lt;Tabs color=&quot;red&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 2&quot; /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
@@ -85,10 +97,13 @@ const Tabbars = () => (
       <code>
         &lt;Tabs color=&quot;orange&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 2&quot; /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
@@ -103,10 +118,13 @@ const Tabbars = () => (
       <code>
         &lt;Tabs color=&quot;green&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 2&quot; /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;
@@ -121,10 +139,13 @@ const Tabbars = () => (
       <code>
         &lt;Tabs color=&quot;blue&quot;&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 2&quot; /&gt;
         <br />
+        <span className='tab' />
         &lt;Tab text=&quot;Tab 3&quot; /&gt;
         <br />
         &lt;/Tabs&gt;

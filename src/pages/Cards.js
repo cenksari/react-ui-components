@@ -19,19 +19,26 @@ const Cards = () => (
       <code>
         &lt;Card
         <br />
+        <span className='tab' />
         size=&apos;large&apos;
         <br />
+        <span className='tab' />
         color=&apos;blue&apos;
         <br />
+        <span className='tab' />
         title=&apos;Card title goes here&apos;
         <br />
+        <span className='tab' />
         image=&apos;https://www.cenksari.com/content/bg2.jpg&apos;
         <br />
+        <span className='tab' />
         content=&apos;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.&apos;
         <br />
+        <span className='tab' />
         button1Text=&apos;First button&apos;
         <br />
+        <span className='tab' />
         button2Text=&apos;Second button&apos;
         <br />
         /&gt;
@@ -51,17 +58,23 @@ const Cards = () => (
       <code>
         &lt;Card
         <br />
+        <span className='tab' />
         size=&apos;medium&apos;
         <br />
+        <span className='tab' />
         color=&apos;orange&apos;
         <br />
+        <span className='tab' />
         title=&apos;Card title goes here&apos;
         <br />
+        <span className='tab' />
         image=&apos;https://www.cenksari.com/content/bg2.jpg&apos;
         <br />
+        <span className='tab' />
         content=&apos;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.&apos;
         <br />
+        <span className='tab' />
         button1Text=&apos;First button&apos;
         <br />
         /&gt;
@@ -81,17 +94,23 @@ const Cards = () => (
       <code>
         &lt;Card
         <br />
+        <span className='tab' />
         size=&apos;small&apos;
         <br />
+        <span className='tab' />
         color=&apos;red&apos;
         <br />
+        <span className='tab' />
         title=&apos;Card title goes here&apos;
         <br />
+        <span className='tab' />
         image=&apos;https://www.cenksari.com/content/bg2.jpg&apos;
         <br />
+        <span className='tab' />
         content=&apos;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua.&apos;
         <br />
+        <span className='tab' />
         button1Text=&apos;First button&apos;
         <br />
         /&gt;

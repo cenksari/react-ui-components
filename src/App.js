@@ -65,7 +65,7 @@ function App() {
         <Row className='margin-bottom'>
           <a aria-label='tabs' id='tabs' href='#tabs' />
           <Heading type={1} color='black' text='Tab' />
-          <p className='gray'>Tab components.</p>
+          <p className='gray'>Tab components. You can also use color tags.</p>
         </Row>
         <Tabbars />
 
@@ -107,7 +107,7 @@ function App() {
         <Row className='margin-bottom'>
           <a aria-label='dialogs' id='dialogs' href='#dialogs' />
           <Heading type={1} color='black' text='Dialog' />
-          <p className='gray'>Dialog components.</p>
+          <p className='gray'>Dialog components. You can also use color tags for buttons.</p>
         </Row>
         <Dialogs />
 

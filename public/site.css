@@ -120,6 +120,11 @@ code {
   box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
+code .tab {
+  width: 25px;
+  display: inline-block;
+}
+
 code::before {
   top: 10px;
   left: 10px;

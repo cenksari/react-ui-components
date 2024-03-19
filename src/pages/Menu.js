@@ -152,6 +152,12 @@ const Menu = () => (
         <li>
           &bull; <a href='#dialogs'>Dialog</a>
         </li>
+        <li className='indent'>
+          <a href='#d-classic'>Classic</a>
+        </li>
+        <li className='indent'>
+          <a href='#d-action'>with action button</a>
+        </li>
       </ul>
       <ul>
         <li>
