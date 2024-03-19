@@ -178,6 +178,12 @@ const Menu = () => (
         <li>
           &bull; <a href='#pagination'>Pagination</a>
         </li>
+        <li className='indent'>
+          <a href='#p-less'>Less pages</a>
+        </li>
+        <li className='indent'>
+          <a href='#p-more'>More pages</a>
+        </li>
       </ul>
       <ul>
         <li>

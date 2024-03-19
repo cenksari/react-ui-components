@@ -1108,3 +1108,77 @@ button.disabled {
 .modal .title button i {
   margin-top: 0 !important;
 }
+
+/* Pagination */
+.paging {
+  display: flex;
+  font-size: 1.3em;
+  user-select: none;
+}
+
+.paging ul {
+  border-radius: 10px;
+  border: 1px solid var(--light-gray);
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.paging ul li {
+  float: left;
+  background-color: var(--white);
+}
+
+.paging ul li:hover {
+  background-color: var(--light-gray);
+}
+
+.paging ul li:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.paging ul li:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.paging ul li a,
+.paging ul li span {
+  padding: 10px;
+  display: block;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.paging ul li a:hover {
+  text-decoration: none;
+}
+
+.paging ul li.disabled {
+  background-color: var(--white);
+}
+
+.paging ul li.disabled span {
+  cursor: default;
+  color: #999999;
+}
+
+.paging ul li.active {
+  background-color: var(--white);
+}
+
+.paging ul li.active a,
+.paging ul li.active span {
+  cursor: default;
+  color: var(--black);
+  font-weight: 800;
+}
+
+.paging ul li select {
+  color: #333333;
+  background-size: 17px 17px;
+  background-color: var(--white);
+  padding: 9px 20px 9px 10px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR4nO2UOwrAIBAF5xKReP+bJFV+TSxynATBQiSI0TXVDggW7htesYKiKIogE7ADRiDLZxzAXPJ4BW7ANcpNyPBZS8nAAJxh4AJshTTNGGsH7R/SFnmztEYuJv0iF5eWyLtJc/Lu0rfddMld4sPJErfs3jTFt9vC6d5UURSFmAePTDtnrV72/QAAAABJRU5ErkJggg==");
+}
