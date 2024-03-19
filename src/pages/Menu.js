@@ -169,6 +169,21 @@ const Menu = () => (
           &bull; <a href='#dropdown'>Dropdown</a>
         </li>
       </ul>
+      <ul>
+        <li>
+          &bull; <a href='#pagination'>Pagination</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          &bull; <a href='#breadcrumb'>Breadcrumb</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          &bull; <a href='#carousel'>Carousel</a>
+        </li>
+      </ul>
     </div>
   </div>
 );

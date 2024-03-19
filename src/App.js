@@ -11,6 +11,9 @@ import Loaders from './pages/Loaders';
 import Dialogs from './pages/Dialogs';
 import Modals from './pages/Modals';
 import Headings from './pages/Headings';
+import Paginations from './pages/Paginations';
+import Breadcrumbs from './pages/Breadcrumbs';
+import Carousels from './pages/Carousels';
 import Dropdowns from './pages/Dropdowns';
 import FormElements from './pages/FormElements';
 import ProfilePhotos from './pages/ProfilePhotos';
@@ -124,6 +127,27 @@ function App() {
           <p className='gray'>Dropdown components. You can also use color tags.</p>
         </Row>
         <Dropdowns />
+
+        <Row className='margin-bottom'>
+          <a aria-label='pagination' id='pagination' href='#pagination' />
+          <Heading type={1} color='black' text='Pagination' />
+          <p className='gray'>Pagination components. You can also use color tags.</p>
+        </Row>
+        <Paginations />
+
+        <Row className='margin-bottom'>
+          <a aria-label='breadcrumb' id='breadcrumb' href='#breadcrumb' />
+          <Heading type={1} color='black' text='Breadcrumb' />
+          <p className='gray'>Breadcrumb components. You can also use color tags.</p>
+        </Row>
+        <Breadcrumbs />
+
+        <Row className='margin-bottom'>
+          <a aria-label='carousel' id='carousel' href='#carousel' />
+          <Heading type={1} color='black' text='Carousel' />
+          <p className='gray'>Carousel components. You can also use color tags.</p>
+        </Row>
+        <Carousels />
       </div>
     </div>
   );
