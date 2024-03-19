@@ -2,8 +2,8 @@ import { memo } from 'react';
 
 import PropTypes from 'prop-types';
 
-const Button = memo(({ type, text, leftIcon, rightIcon, className }) => (
-  <button type={type === 'button' ? 'button' : 'submit'} className={className}>
+const Button = memo(({ type, text, leftIcon, rightIcon, color }) => (
+  <button type={type === 'button' ? 'button' : 'submit'} className={color}>
     {leftIcon && <i className='material-icons left-icon'>{leftIcon}</i>}
     {text}
     {rightIcon && <i className='material-icons right-icon'>{rightIcon}</i>}
@@ -19,7 +19,7 @@ Button.defaultProps = {
 Button.propTypes = {
   type: PropTypes.string,
   text: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
   leftIcon: PropTypes.string,
   rightIcon: PropTypes.string,
 };

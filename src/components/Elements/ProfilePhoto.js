@@ -2,11 +2,11 @@ import { memo } from 'react';
 
 import PropTypes from 'prop-types';
 
-const ProfilePhoto = memo(({ className, size, text, image }) => {
+const ProfilePhoto = memo(({ color, size, text, image }) => {
   if (!image) {
     return (
       <div className='profile-photo'>
-        <div className={`avatar ${size} ${className}`}>{text}</div>
+        <div className={`avatar ${size} ${color}`}>{text}</div>
       </div>
     );
   }
@@ -22,14 +22,14 @@ const ProfilePhoto = memo(({ className, size, text, image }) => {
 ProfilePhoto.defaultProps = {
   size: 'small',
   text: null,
-  className: null,
+  color: null,
   image: null,
 };
 
 ProfilePhoto.propTypes = {
   size: PropTypes.string,
   text: PropTypes.string,
-  className: PropTypes.string,
+  color: PropTypes.string,
   image: PropTypes.string,
 };
 

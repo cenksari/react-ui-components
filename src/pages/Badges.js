@@ -3,33 +3,33 @@ import Badge from '../components/Elements/Badge';
 
 const Badges = () => (
   <Row className='margin-bottom'>
-    <Badge text='gray' className='gray' />
+    <Badge text='gray' color='gray' />
     &nbsp;
-    <Badge text='yellow' className='yellow' />
+    <Badge text='yellow' color='yellow' />
     &nbsp;
-    <Badge text='purple' className='purple' />
+    <Badge text='purple' color='purple' />
     &nbsp;
-    <Badge text='red' className='red' />
+    <Badge text='red' color='red' />
     &nbsp;
-    <Badge text='orange' className='orange' />
+    <Badge text='orange' color='orange' />
     &nbsp;
-    <Badge text='green' className='green' />
+    <Badge text='green' color='green' />
     &nbsp;
-    <Badge text='blue' className='blue' />
+    <Badge text='blue' color='blue' />
     <code>
-      &lt;Badge text=&apos;gray&apos; className=&apos;gray&apos; /&gt;
+      &lt;Badge text=&apos;gray&apos; color=&apos;gray&apos; /&gt;
       <br />
-      &lt;Badge text=&apos;yellow&apos; className=&apos;yellow&apos; /&gt;
+      &lt;Badge text=&apos;yellow&apos; color=&apos;yellow&apos; /&gt;
       <br />
-      &lt;Badge text=&apos;purple&apos; className=&apos;purple&apos; /&gt;
+      &lt;Badge text=&apos;purple&apos; color=&apos;purple&apos; /&gt;
       <br />
-      &lt;Badge text=&apos;red&apos; className=&apos;red&apos; /&gt;
+      &lt;Badge text=&apos;red&apos; color=&apos;red&apos; /&gt;
       <br />
-      &lt;Badge text=&apos;orange&apos; className=&apos;orange&apos; /&gt;
+      &lt;Badge text=&apos;orange&apos; color=&apos;orange&apos; /&gt;
       <br />
-      &lt;Badge text=&apos;green&apos; className=&apos;green&apos; /&gt;
+      &lt;Badge text=&apos;green&apos; color=&apos;green&apos; /&gt;
       <br />
-      &lt;Badge text=&apos;blue&apos; className=&apos;blue&apos; /&gt;
+      &lt;Badge text=&apos;blue&apos; color=&apos;blue&apos; /&gt;
     </code>
   </Row>
 );

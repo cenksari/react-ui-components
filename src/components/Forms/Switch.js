@@ -2,9 +2,9 @@ import { memo } from 'react';
 
 import PropTypes from 'prop-types';
 
-const Switch = memo(({ name, checked, className, description }) => (
+const Switch = memo(({ name, checked, color, description }) => (
   <div className='switch-container'>
-    <label className={`switch ${className}`}>
+    <label className={`switch ${color}`}>
       <input name={name} type='checkbox' defaultChecked={checked} />
       <span className='slider round' />
     </label>
@@ -20,7 +20,7 @@ Switch.defaultProps = {
 Switch.propTypes = {
   checked: PropTypes.bool,
   description: PropTypes.string,
-  className: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
 

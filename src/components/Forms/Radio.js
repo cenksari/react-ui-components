@@ -2,9 +2,9 @@ import { memo } from 'react';
 
 import PropTypes from 'prop-types';
 
-const Radio = memo(({ name, checked, className, description, value }) => (
+const Radio = memo(({ name, checked, color, description, value }) => (
   <div className='radio-container'>
-    <label className={`radio ${className}`}>
+    <label className={`radio ${color}`}>
       <input name={name} type='radio' defaultChecked={checked} value={value} />
       <span className='slider round' />
     </label>
@@ -21,7 +21,7 @@ Radio.propTypes = {
   name: PropTypes.string.isRequired,
   checked: PropTypes.bool,
   description: PropTypes.string,
-  className: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
 };
 

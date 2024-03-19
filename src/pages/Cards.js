@@ -6,10 +6,10 @@ const Cards = () => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='c-large' id='c-large' href='#c-large' />
-      <Heading type={2} className='gray' text='Large card' />
+      <Heading type={2} color='gray' text='Large' />
       <Card
         size='large'
-        className='blue'
+        color='blue'
         title='Card title goes here'
         image='https://www.cenksari.com/content/bg2.jpg'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -21,7 +21,7 @@ const Cards = () => (
         <br />
         size=&apos;large&apos;
         <br />
-        className=&apos;blue&apos;
+        color=&apos;blue&apos;
         <br />
         title=&apos;Card title goes here&apos;
         <br />
@@ -39,10 +39,10 @@ const Cards = () => (
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='c-medium' id='c-medium' href='#c-medium' />
-      <Heading type={2} className='gray' text='Medium card' />
+      <Heading type={2} color='gray' text='Medium' />
       <Card
         size='medium'
-        className='blue'
+        color='orange'
         title='Card title goes here'
         image='https://www.cenksari.com/content/bg2.jpg'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -53,7 +53,7 @@ const Cards = () => (
         <br />
         size=&apos;medium&apos;
         <br />
-        className=&apos;blue&apos;
+        color=&apos;orange&apos;
         <br />
         title=&apos;Card title goes here&apos;
         <br />
@@ -69,10 +69,10 @@ const Cards = () => (
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='c-small' id='c-small' href='#c-small' />
-      <Heading type={2} className='gray' text='Small card' />
+      <Heading type={2} color='gray' text='Small' />
       <Card
         size='small'
-        className='blue'
+        color='red'
         title='Card title goes here'
         image='https://www.cenksari.com/content/bg2.jpg'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -83,7 +83,7 @@ const Cards = () => (
         <br />
         size=&apos;small&apos;
         <br />
-        className=&apos;blue&apos;
+        color=&apos;red&apos;
         <br />
         title=&apos;Card title goes here&apos;
         <br />

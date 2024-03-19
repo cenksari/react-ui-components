@@ -6,109 +6,109 @@ const Buttons = () => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='b-gray' id='b-gray' href='#b-gray' />
-      <Heading type={2} className='gray' text='Gray' />
-      <Button type='button' text='The button' className='gray-filled' leftIcon='arrow_forward' />
+      <Heading type={2} color='gray' text='Gray' />
+      <Button type='button' text='The button' color='gray-filled' leftIcon='arrow_forward' />
       &nbsp;&nbsp;
-      <Button type='button' text='The button' className='gray-overlay' rightIcon='arrow_forward' />
+      <Button type='button' text='The button' color='gray-overlay' rightIcon='arrow_forward' />
       <code>
-        &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;gray-filled&quot; leftIcon=&quot;arrow_forward&quot; /&gt;
+        &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;gray-filled&quot;
+        leftIcon=&quot;arrow_forward&quot; /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;gray-overlay&quot; rightIcon=&quot;arrow_forward&quot; /&gt;
+        color=&quot;gray-overlay&quot; rightIcon=&quot;arrow_forward&quot; /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='b-yellow' id='b-yellow' href='#b-yellow' />
-      <Heading type={2} className='yellow' text='Yellow' />
-      <Button type='button' text='The button' className='yellow-filled' />
+      <Heading type={2} color='yellow' text='Yellow' />
+      <Button type='button' text='The button' color='yellow-filled' />
       &nbsp;&nbsp;
-      <Button type='button' text='The button' className='yellow-overlay' />
+      <Button type='button' text='The button' color='yellow-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;yellow-filled&quot; /&gt;
+        color=&quot;yellow-filled&quot; /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;yellow-overlay&quot; /&gt;
+        color=&quot;yellow-overlay&quot; /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='b-purple' id='b-purple' href='#b-purple' />
-      <Heading type={2} className='purple' text='Purple' />
-      <Button type='button' text='The button' className='purple-filled' />
+      <Heading type={2} color='purple' text='Purple' />
+      <Button type='button' text='The button' color='purple-filled' />
       &nbsp;&nbsp;
-      <Button type='button' text='The button' className='purple-overlay' />
+      <Button type='button' text='The button' color='purple-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;purple-filled&quot; /&gt;
+        color=&quot;purple-filled&quot; /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;purple-overlay&quot; /&gt;
+        color=&quot;purple-overlay&quot; /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='b-red' id='b-red' href='#b-red' />
-      <Heading type={2} className='red' text='Red' />
-      <Button type='button' text='The button' className='red-filled' />
+      <Heading type={2} color='red' text='Red' />
+      <Button type='button' text='The button' color='red-filled' />
       &nbsp;&nbsp;
-      <Button type='button' text='The button' className='red-overlay' />
+      <Button type='button' text='The button' color='red-overlay' />
       <code>
-        &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;red-filled&quot; /&gt;
+        &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;red-filled&quot;
+        /&gt;
         <br />
-        &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;red-overlay&quot; /&gt;
+        &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;red-overlay&quot;
+        /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='b-orange' id='b-orange' href='#b-orange' />
-      <Heading type={2} className='orange' text='Orange' />
-      <Button type='button' text='The button' className='orange-filled' />
+      <Heading type={2} color='orange' text='Orange' />
+      <Button type='button' text='The button' color='orange-filled' />
       &nbsp;&nbsp;
-      <Button type='button' text='The button' className='orange-overlay' />
+      <Button type='button' text='The button' color='orange-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;orange-filled&quot; /&gt;
+        color=&quot;orange-filled&quot; /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;orange-overlay&quot; /&gt;
+        color=&quot;orange-overlay&quot; /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='b-green' id='b-green' href='#b-green' />
-      <Heading type={2} className='green' text='Green' />
-      <Button type='button' text='The button' className='green-filled' />
+      <Heading type={2} color='green' text='Green' />
+      <Button type='button' text='The button' color='green-filled' />
       &nbsp;&nbsp;
-      <Button type='button' text='The button' className='green-overlay' />
+      <Button type='button' text='The button' color='green-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;green-filled&quot; /&gt;
+        color=&quot;green-filled&quot; /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;green-overlay&quot; /&gt;
+        color=&quot;green-overlay&quot; /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='b-blue' id='b-blue' href='#b-blue' />
-      <Heading type={2} className='blue' text='Blue' />
-      <Button type='button' text='The button' className='blue-filled' />
+      <Heading type={2} color='blue' text='Blue' />
+      <Button type='button' text='The button' color='blue-filled' />
       &nbsp;&nbsp;
-      <Button type='button' text='The button' className='blue-overlay' />
+      <Button type='button' text='The button' color='blue-overlay' />
       <code>
-        &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;blue-filled&quot; /&gt;
+        &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;blue-filled&quot;
+        /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;blue-overlay&quot; /&gt;
+        color=&quot;blue-overlay&quot; /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='b-disabled' id='b-disabled' href='#b-disabled' />
-      <Heading type={2} className='gray' text='Disabled button' />
-      <Button type='button' text='The button' className='disabled' />
+      <Heading type={2} color='gray' text='Disabled button' />
+      <Button type='button' text='The button' color='disabled' />
       <code>
-        &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        className=&quot;disabled&quot; /&gt;
+        &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;disabled&quot;
+        /&gt;
       </code>
     </Row>
   </>

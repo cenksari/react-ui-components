@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Button from '../Buttons/Button';
 
-const Card = memo(({ size, className, title, content, image, button1Text, button2Text }) => (
+const Card = memo(({ size, color, title, content, image, button1Text, button2Text }) => (
   <div className={`card ${size}-card`}>
     <div className='card-title flex flex-v-center flex-space-between'>
       <h6>{title}</h6>
@@ -18,12 +18,8 @@ const Card = memo(({ size, className, title, content, image, button1Text, button
     </div>
     {(button1Text || button2Text) && (
       <div className='card-buttons flex flex-v-center flex-space-around'>
-        {button1Text && (
-          <Button type='button' className={`${className}-filled`} text={button1Text} />
-        )}
-        {button2Text && (
-          <Button type='button' className={`${className}-overlay`} text={button2Text} />
-        )}
+        {button1Text && <Button type='button' color={`${color}-filled`} text={button1Text} />}
+        {button2Text && <Button type='button' color={`${color}-overlay`} text={button2Text} />}
       </div>
     )}
   </div>
@@ -36,7 +32,7 @@ Card.defaultProps = {
 
 Card.propTypes = {
   size: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,

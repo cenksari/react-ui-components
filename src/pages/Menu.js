@@ -3,7 +3,7 @@ const Menu = () => (
     <div className='inner'>
       <ul>
         <li>
-          &bull; <a href='#buttons'>Buttons</a>
+          &bull; <a href='#buttons'>Button</a>
         </li>
         <li className='indent'>
           <a href='#b-gray'>Gray</a>
@@ -52,7 +52,7 @@ const Menu = () => (
       </ul>
       <ul>
         <li>
-          &bull; <a href='#profile-photos'>Profile photos</a>
+          &bull; <a href='#profile-photos'>Profile photo</a>
         </li>
         <li className='indent'>
           <a href='#pp-big'>Big</a>
@@ -75,12 +75,12 @@ const Menu = () => (
       </ul>
       <ul>
         <li>
-          &bull; <a href='#tabs'>Tabs</a>
+          &bull; <a href='#tabs'>Tab</a>
         </li>
       </ul>
       <ul>
         <li>
-          &bull; <a href='#headings'>Headings</a>
+          &bull; <a href='#headings'>Heading</a>
         </li>
         <li className='indent'>
           <a href='#h1'>Heading 1</a>
@@ -103,21 +103,21 @@ const Menu = () => (
       </ul>
       <ul>
         <li>
-          &bull; <a href='#cards'>Cards</a>
+          &bull; <a href='#cards'>Card</a>
         </li>
         <li className='indent'>
-          <a href='#c-large'>Large card</a>
+          <a href='#c-large'>Large</a>
         </li>
         <li className='indent'>
-          <a href='#c-medium'>Medium card</a>
+          <a href='#c-medium'>Medium</a>
         </li>
         <li className='indent'>
-          <a href='#c-small'>Small card</a>
+          <a href='#c-small'>Small</a>
         </li>
       </ul>
       <ul>
         <li>
-          &bull; <a href='#alerts'>Alerts</a>
+          &bull; <a href='#alerts'>Alert</a>
         </li>
         <li className='indent'>
           <a href='#a-info'>Info</a>
@@ -134,7 +134,33 @@ const Menu = () => (
       </ul>
       <ul>
         <li>
-          &bull; <a href='#badges'>Badges</a>
+          &bull; <a href='#badges'>Badge</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          &bull; <a href='#loaders'>Loader</a>
+        </li>
+        <li className='indent'>
+          <a href='#l-inline'>Inline</a>
+        </li>
+        <li className='indent'>
+          <a href='#l-full'>Full screen</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          &bull; <a href='#dialogs'>Dialog</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          &bull; <a href='#modals'>Modal</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          &bull; <a href='#dropdown'>Dropdown</a>
         </li>
       </ul>
     </div>

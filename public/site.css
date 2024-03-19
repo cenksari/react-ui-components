@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Material+Icons&display=swap&subset=latin,latin-ext');
 
-html, body, input, select, textarea, button, p, span, div, i, em, img, table, tr, th, td, strong, a, ul, li, h1, h2, h3, h4, h5, h6, nav, header, footer, section {
+html, body, input, select, textarea, button, p, span, div, i, em, img, table, tr, th, td, strong, a, ul, li, h1, h2, h3, h4, h5, h6, h7, nav, header, footer, section {
   margin: 0;
   border: 0;
   padding: 0;
@@ -9,7 +9,7 @@ html, body, input, select, textarea, button, p, span, div, i, em, img, table, tr
   font-weight: 400;
   border-radius: 0;
   appearance: none;
-  font-size: 1.05em;
+  font-size: 1.02em;
   font-style: normal;
   box-sizing: border-box;
   vertical-align: baseline;
@@ -21,6 +21,22 @@ html, body, input, select, textarea, button, p, span, div, i, em, img, table, tr
 ::selection {
   color: #ffffff;
   background: var(--gray);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #cccccc;
 }
 
 html, body {
@@ -84,26 +100,36 @@ p:last-child {
   padding: 25px 0 0 25px;
 }
 
-.menu .inner::-webkit-scrollbar {
-  width: 10px;
-}
-
-.menu .inner::-webkit-scrollbar-track {
-  background-color: #f5f5f5;
-}
-
-.menu .inner::-webkit-scrollbar-thumb {
-  background-color: #cccccc;
-}
-
-.menu .inner::-webkit-scrollbar-thumb:window-inactive {
-  background: #cccccc;
-}
-
 .content {
   flex: 3;
   height: 100vh;
-  padding: 0 25px;
+  padding: 10px 25px;
   overflow: auto;
   background-color: #ffffff;
+}
+
+code {
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  padding: 60px 40px 30px 40px;
+  font-family: Consolas, "courier new";
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+code::before {
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  font-size: 0.9em;
+  content: '<Code />';
+  font-weight: 800;
+  color: #ffffff;
+  user-select: none;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #999999;
 }

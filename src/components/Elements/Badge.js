@@ -2,11 +2,11 @@ import { memo } from 'react';
 
 import PropTypes from 'prop-types';
 
-const Badge = memo(({ text, className }) => <span className={`badge ${className}`}>{text}</span>);
+const Badge = memo(({ text, color }) => <span className={`badge ${color}`}>{text}</span>);
 
 Badge.propTypes = {
   text: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default Badge;

@@ -9,25 +9,25 @@ const FormElements = () => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='input' id='input' href='#input' />
-      <Heading type={2} className='gray' text='Input' />
-      <Input name='inp' type='text' className='input-text' placeholder='input placeholder' />
+      <Heading type={2} color='gray' text='Input' />
+      <Input name='inp' type='text' placeholder='input placeholder' />
       <code>
-        &lt;Input name=&quot;inp&quot; type=&quot;text&quot; className=&quot;input-text&quot;
-        placeholder=&quot;Input placeholder&quot; /&gt;
+        &lt;Input name=&quot;inp&quot; type=&quot;text&quot; placeholder=&quot;Input
+        placeholder&quot; /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='textarea' id='textarea' href='#textarea' />
-      <Heading type={2} className='gray' text='Textarea' />
-      <TextArea name='txt' rows={3} className='input-text' placeholder='Textarea placeholder' />
+      <Heading type={2} color='gray' text='Textarea' />
+      <TextArea name='txt' rows={3} placeholder='Textarea placeholder' />
       <code>
-        &lt;TextArea name=&quot;txt&quot; rows={3} className=&quot;input-text&quot;
-        placeholder=&quot;Textarea placeholder&quot; /&gt;
+        &lt;TextArea name=&quot;txt&quot; rows={3} placeholder=&quot;Textarea placeholder&quot;
+        /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='select' id='select' href='#select' />
-      <Heading type={2} className='gray' text='Select' />
+      <Heading type={2} color='gray' text='Select' />
       <select name='sel' className='select'>
         <option value='1'>Option 1</option>
         <option value='2'>Option 2</option>
@@ -53,98 +53,98 @@ const FormElements = () => (
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='switch' id='switch' href='#switch' />
-      <Heading type={2} className='gray' text='Switch' />
+      <Heading type={2} color='gray' text='Switch' />
       <Row className='margin-bottom'>
-        <Switch name='col' checked description='Gray switch' className='gray' />
+        <Switch name='col' checked description='Gray switch' color='gray' />
       </Row>
       <Row className='margin-bottom'>
-        <Switch name='col' checked description='Yellow switch' className='yellow' />
+        <Switch name='col' checked description='Yellow switch' color='yellow' />
       </Row>
       <Row className='margin-bottom'>
-        <Switch name='col' checked description='Purple switch' className='purple' />
+        <Switch name='col' checked description='Purple switch' color='purple' />
       </Row>
       <Row className='margin-bottom'>
-        <Switch name='col' checked description='Red switch' className='red' />
+        <Switch name='col' checked description='Red switch' color='red' />
       </Row>
       <Row className='margin-bottom'>
-        <Switch name='col' checked description='Orange switch' className='orange' />
+        <Switch name='col' checked description='Orange switch' color='orange' />
       </Row>
       <Row className='margin-bottom'>
-        <Switch name='col' checked description='Green switch' className='green' />
+        <Switch name='col' checked description='Green switch' color='green' />
       </Row>
       <Row className='margin-bottom'>
-        <Switch name='col' checked description='Blue switch' className='blue' />
+        <Switch name='col' checked description='Blue switch' color='blue' />
       </Row>
       <Row className='margin-bottom'>
         <code>
           &lt;Switch name=&quot;col&quot; checked description=&quot;Gray switch&quot;
-          className=&quot;gray&quot; /&gt;
+          color=&quot;gray&quot; /&gt;
           <br />
-          &lt;Switch name=&quot;col&quot; description=&quot;Yellow switch&quot;
-          className=&quot;yellow&quot; /&gt;
+          &lt;Switch name=&quot;col&quot; checked description=&quot;Yellow switch&quot;
+          color=&quot;yellow&quot; /&gt;
           <br />
-          &lt;Switch name=&quot;col&quot; description=&quot;Purple switch&quot;
-          className=&quot;purple&quot; /&gt;
+          &lt;Switch name=&quot;col&quot; checked description=&quot;Purple switch&quot;
+          color=&quot;purple&quot; /&gt;
           <br />
-          &lt;Switch name=&quot;col&quot; description=&quot;Red switch&quot;
-          className=&quot;red&quot; /&gt;
+          &lt;Switch name=&quot;col&quot; checked description=&quot;Red switch&quot;
+          color=&quot;red&quot; /&gt;
           <br />
-          &lt;Switch name=&quot;col&quot; description=&quot;Orange switch&quot;
-          className=&quot;orange&quot; /&gt;
+          &lt;Switch name=&quot;col&quot; checked description=&quot;Orange switch&quot;
+          color=&quot;orange&quot; /&gt;
           <br />
-          &lt;Switch name=&quot;col&quot; description=&quot;Green switch&quot;
-          className=&quot;green&quot; /&gt;
+          &lt;Switch name=&quot;col&quot; checked description=&quot;Green switch&quot;
+          color=&quot;green&quot; /&gt;
           <br />
-          &lt;Switch name=&quot;col&quot; description=&quot;Blue switch&quot;
-          className=&quot;blue&quot; /&gt;
+          &lt;Switch name=&quot;col&quot; checked description=&quot;Blue switch&quot;
+          color=&quot;blue&quot; /&gt;
         </code>
       </Row>
     </Row>
     <Row className='margin-bottom'>
       <a aria-label='radio' id='radio' href='#radio' />
-      <Heading type={2} className='gray' text='Radio button' />
+      <Heading type={2} color='gray' text='Radio button' />
       <Row className='margin-bottom'>
-        <Radio checked name='fav' description='Gray radio button' className='gray' value='1' />
+        <Radio checked name='fav' description='Gray radio button' color='gray' value='1' />
       </Row>
       <Row className='margin-bottom'>
-        <Radio name='fav' description='Yellow radio button' className='yellow' value='2' />
+        <Radio name='fav' description='Yellow radio button' color='yellow' value='2' />
       </Row>
       <Row className='margin-bottom'>
-        <Radio name='fav' description='Purple radio button' className='purple' value='3' />
+        <Radio name='fav' description='Purple radio button' color='purple' value='3' />
       </Row>
       <Row className='margin-bottom'>
-        <Radio name='fav' description='Red radio button' className='red' value='4' />
+        <Radio name='fav' description='Red radio button' color='red' value='4' />
       </Row>
       <Row className='margin-bottom'>
-        <Radio name='fav' description='Orange radio button' className='orange' value='5' />
+        <Radio name='fav' description='Orange radio button' color='orange' value='5' />
       </Row>
       <Row className='margin-bottom'>
-        <Radio name='fav' description='Green radio button' className='green' value='6' />
+        <Radio name='fav' description='Green radio button' color='green' value='6' />
       </Row>
       <Row className='margin-bottom'>
-        <Radio name='fav' description='Blue radio button' className='blue' value='7' />
+        <Radio name='fav' description='Blue radio button' color='blue' value='7' />
       </Row>
       <code>
         &lt;Radio checked name=&quot;fav&quot; description=&quot;Gray radio button&quot;
-        className=&quot;gray&quot; value=&quot;1&quot; /&gt;
+        color=&quot;gray&quot; value=&quot;1&quot; /&gt;
         <br />
         &lt;Radio name=&quot;fav&quot; description=&quot;Yellow radio button&quot;
-        className=&quot;yellow&quot; value=&quot;2&quot; /&gt;
+        color=&quot;yellow&quot; value=&quot;2&quot; /&gt;
         <br />
         &lt;Radio name=&quot;fav&quot; description=&quot;Purple radio button&quot;
-        className=&quot;purple&quot; value=&quot;3&quot; /&gt;
+        color=&quot;purple&quot; value=&quot;3&quot; /&gt;
         <br />
         &lt;Radio name=&quot;fav&quot; description=&quot;Red radio button&quot;
-        className=&quot;red&quot; value=&quot;4&quot; /&gt;
+        color=&quot;red&quot; value=&quot;4&quot; /&gt;
         <br />
         &lt;Radio name=&quot;fav&quot; description=&quot;Orange radio button&quot;
-        className=&quot;orange&quot; value=&quot;5&quot; /&gt;
+        color=&quot;orange&quot; value=&quot;5&quot; /&gt;
         <br />
         &lt;Radio name=&quot;fav&quot; description=&quot;Green radio button&quot;
-        className=&quot;green&quot; value=&quot;6&quot; /&gt;
+        color=&quot;green&quot; value=&quot;6&quot; /&gt;
         <br />
         &lt;Radio name=&quot;fav&quot; description=&quot;Blue radio button&quot;
-        className=&quot;blue&quot; value=&quot;7&quot; /&gt;
+        color=&quot;blue&quot; value=&quot;7&quot; /&gt;
       </code>
     </Row>
   </>
