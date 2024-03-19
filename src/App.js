@@ -17,6 +17,7 @@ import Carousels from './pages/Carousels';
 import Dropdowns from './pages/Dropdowns';
 import FormElements from './pages/FormElements';
 import ProfilePhotos from './pages/ProfilePhotos';
+import Notifications from './pages/Notifications';
 
 function App() {
   return (
@@ -109,6 +110,13 @@ function App() {
             <p className='gray'>Badge components.</p>
           </Row>
           <Badges />
+
+          <Row className='margin-bottom'>
+            <a aria-label='notification' id='notification' href='#notification' />
+            <Heading type={1} color='black' text='Notification' />
+            <p className='gray'>Notification components.</p>
+          </Row>
+          <Notifications />
 
           <Row className='margin-bottom'>
             <a aria-label='loaders' id='loaders' href='#loaders' />

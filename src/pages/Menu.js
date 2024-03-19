@@ -139,6 +139,11 @@ const Menu = () => (
       </ul>
       <ul>
         <li>
+          &bull; <a href='#notification'>Notification</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
           &bull; <a href='#loaders'>Loader</a>
         </li>
         <li className='indent'>

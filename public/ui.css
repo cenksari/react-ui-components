@@ -837,6 +837,48 @@ button.disabled {
   background-color: var(--blue);
 }
 
+/* Notifications */
+.notification {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  font-weight: 800;
+  font-size: 0.6em;
+  user-select: none;
+  border-radius: 50em;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+}
+
+.notification.gray {
+  background-color: var(--gray);
+}
+
+.notification.yellow {
+  background-color: var(--yellow);
+}
+
+.notification.purple {
+  background-color: var(--purple);
+}
+
+.notification.red {
+  background-color: var(--red);
+}
+
+.notification.orange {
+  background-color: var(--orange);
+}
+
+.notification.green {
+  background-color: var(--green);
+}
+
+.notification.blue {
+  background-color: var(--blue);
+}
+
 /* Loaders */
 .loader-backdrop {
   top: 0;
@@ -886,6 +928,7 @@ button.disabled {
 /* Dropdowns */
 .dropdown {
   border-radius: 10px;
+  display: inline-block;
   background-color: var(--light-gray);
   border: 1px solid rgba(0,0,0,0.1);
 }
@@ -897,7 +940,7 @@ button.disabled {
   border-radius: 0;
   margin: 0 !important;
   display: block !important;
-  padding: 13px 10px !important;
+  padding: 13px 20px !important;
 }
 
 .dropdown button:hover {
