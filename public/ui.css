@@ -629,7 +629,7 @@ button.disabled {
   font-weight: 400;
   color: var(--gray);
   border-radius: 0;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: var(--white);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -637,7 +637,6 @@ button.disabled {
 
 .tabs .tab-bar .tab a.active,
 .tabs .tab-bar .tab button.active {
-  padding: 15px 20px;
   color: var(--white);
   pointer-events: none;
   border-top-left-radius: 5px;
@@ -680,7 +679,7 @@ button.disabled {
 }
 
 .tab-content {
-  padding: 10px;
+  padding: 15px;
   border-left: 1px solid #dadada;
   border-right: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
@@ -705,6 +704,7 @@ button.disabled {
 
 .card-title h6 {
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .card-title button i {
@@ -739,7 +739,6 @@ button.disabled {
 
 .medium-card .card-title h6 {
   font-size: 1em;
-  font-weight: 500;
 }
 
 .medium-card .card-content p {
@@ -753,7 +752,6 @@ button.disabled {
 
 .small-card .card-title h6 {
   font-size: 0.9em;
-  font-weight: 500;
 }
 
 .small-card .card-content p {
