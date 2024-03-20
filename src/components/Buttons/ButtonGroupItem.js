@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 import PropTypes from 'prop-types';
 
-const ButtonGroupItem = memo(({ text, active, disabled }) => {
+const ButtonGroupItem = memo(({ text, active, disabled, onClick }) => {
   let className = '';
 
   if (disabled) {
@@ -14,7 +14,7 @@ const ButtonGroupItem = memo(({ text, active, disabled }) => {
   }
 
   return (
-    <button type='button' className={className}>
+    <button type='button' className={className} onClick={onClick}>
       {text}
     </button>
   );
@@ -23,12 +23,14 @@ const ButtonGroupItem = memo(({ text, active, disabled }) => {
 ButtonGroupItem.defaultProps = {
   active: false,
   disabled: false,
+  onClick: () => {},
 };
 
 ButtonGroupItem.propTypes = {
   text: PropTypes.string.isRequired,
   active: PropTypes.bool,
   disabled: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default ButtonGroupItem;
