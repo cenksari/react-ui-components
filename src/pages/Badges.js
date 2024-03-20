@@ -4,17 +4,11 @@ import Badge from '../components/Elements/Badge';
 const Badges = () => (
   <Row className='margin-bottom'>
     <Badge text='gray' color='gray' />
-    &nbsp;
     <Badge text='yellow' color='yellow' />
-    &nbsp;
     <Badge text='purple' color='purple' />
-    &nbsp;
     <Badge text='red' color='red' />
-    &nbsp;
     <Badge text='orange' color='orange' />
-    &nbsp;
     <Badge text='green' color='green' />
-    &nbsp;
     <Badge text='blue' color='blue' />
     <code>
       &lt;Badge text=&apos;gray&apos; color=&apos;gray&apos; /&gt;
