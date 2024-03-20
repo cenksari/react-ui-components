@@ -1205,6 +1205,133 @@ button.disabled {
   background-color: var(--white);
 }
 
+/* Button group */
+.button-group {
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.button-group button {
+  padding: 15px;
+  border-radius: 0;
+}
+
+.button-group button:hover {
+  transform: none;
+}
+
+.button-group button.active {
+  color: var(--white) !important;
+}
+
+.button-group button:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.button-group button:last-child {
+  border-right: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.button-group button.disabled {
+  border: 0 !important;
+  color: var(--dark-gray) !important;
+  border: 1px solid var(--light-gray);
+}
+
+.button-group.gray {
+  border: 1px solid var(--gray);
+}
+
+.button-group.yellow {
+  border: 1px solid var(--yellow);
+}
+
+.button-group.purple {
+  border: 1px solid var(--purple);
+}
+
+.button-group.red {
+  border: 1px solid var(--red);
+}
+
+.button-group.orange {
+  border: 1px solid var(--orange);
+}
+
+.button-group.green {
+  border: 1px solid var(--green);
+}
+
+.button-group.blue {
+  border: 1px solid var(--blue);
+}
+
+.button-group.gray button {
+  color: var(--gray);
+  border-right: 1px solid var(--gray);
+}
+
+.button-group.yellow button {
+  color: var(--yellow);
+  border-right: 1px solid var(--yellow);
+}
+
+.button-group.purple button {
+  color: var(--purple);
+  border-right: 1px solid var(--purple);
+}
+
+.button-group.red button {
+  color: var(--red);
+  border-right: 1px solid var(--red);
+}
+
+.button-group.orange button {
+  color: var(--orange);
+  border-right: 1px solid var(--orange);
+}
+
+.button-group.green button {
+  color: var(--green);
+  border-right: 1px solid var(--green);
+}
+
+.button-group.blue button {
+  color: var(--blue);
+  border-right: 1px solid var(--blue);
+}
+
+.button-group.gray button.active {
+  background-color: var(--gray);
+}
+
+.button-group.yellow button.active {
+  background-color: var(--yellow);
+}
+
+.button-group.purple button.active {
+  background-color: var(--purple);
+}
+
+.button-group.red button.active {
+  background-color: var(--red);
+}
+
+.button-group.orange button.active {
+  background-color: var(--orange);
+}
+
+.button-group.green button.active {
+  background-color: var(--green);
+}
+
+.button-group.blue button.active {
+  background-color: var(--blue);
+}
+
 @media (max-width: 500px) {
   .card {
     width: 100%;
