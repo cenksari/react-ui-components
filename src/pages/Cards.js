@@ -88,7 +88,7 @@ const Cards = () => (
         color='red'
         title='Card title goes here'
         image='https://www.cenksari.com/content/bg2.jpg'
-        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
         button1Text='First button'
       />
       <code>
@@ -108,7 +108,7 @@ const Cards = () => (
         <br />
         <span className='tab' />
         content=&apos;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.&apos;
+        incididunt.&apos;
         <br />
         <span className='tab' />
         button1Text=&apos;First button&apos;

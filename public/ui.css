@@ -134,7 +134,7 @@ button {
   font-weight: 500;
   user-select: none;
   line-height: 100%;
-  padding: 20px 50px;
+  padding: 20px 40px;
   border-radius: 50em;
   white-space: nowrap;
   background: transparent;
@@ -1179,4 +1179,10 @@ button.disabled {
   background-repeat: no-repeat;
   background-position: right center;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR4nO2UOwrAIBAF5xKReP+bJFV+TSxynATBQiSI0TXVDggW7htesYKiKIogE7ADRiDLZxzAXPJ4BW7ANcpNyPBZS8nAAJxh4AJshTTNGGsH7R/SFnmztEYuJv0iF5eWyLtJc/Lu0rfddMld4sPJErfs3jTFt9vC6d5UURSFmAePTDtnrV72/QAAAABJRU5ErkJggg==");
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
 }

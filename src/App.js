@@ -20,9 +20,24 @@ import ProfilePhotos from './pages/ProfilePhotos';
 import Notifications from './pages/Notifications';
 
 function App() {
+  const menuState = () => {
+    const element = document.getElementsByClassName('menu')[0];
+
+    const currentDisplay = element.style.display;
+
+    if (currentDisplay === 'block') {
+      element.style.display = 'none';
+    } else {
+      element.style.display = 'block';
+    }
+  };
+
   return (
     <>
       <header>
+        <button type='button' className='responsive-hide' onClick={() => menuState()}>
+          <i className='material-icons'>menu</i>
+        </button>
         <a aria-label='github' href='https://github.com/cenksari/react-ui-components'>
           React UI Components
         </a>
