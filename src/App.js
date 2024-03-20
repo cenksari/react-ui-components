@@ -10,12 +10,14 @@ import Buttons from './pages/Buttons';
 import Tabbars from './pages/Tabbars';
 import Loaders from './pages/Loaders';
 import Dialogs from './pages/Dialogs';
+import Sliders from './pages/Sliders';
 import Headings from './pages/Headings';
 import Carousels from './pages/Carousels';
 import Dropdowns from './pages/Dropdowns';
 import Paginations from './pages/Paginations';
 import Breadcrumbs from './pages/Breadcrumbs';
 import FormElements from './pages/FormElements';
+import ButtonGroups from './pages/ButtonGroups';
 import ProfilePhotos from './pages/ProfilePhotos';
 import Notifications from './pages/Notifications';
 
@@ -53,6 +55,22 @@ function App() {
             text='Button components. You can also use color tags.'
           >
             <Buttons />
+          </Section>
+
+          <Section
+            anchor='button-groups'
+            title='Button group'
+            text='Button group components. You can also use color tags.'
+          >
+            <ButtonGroups />
+          </Section>
+
+          <Section
+            anchor='sliders'
+            title='Slider'
+            text='Slider group components. You can also use color tags.'
+          >
+            <Sliders />
           </Section>
 
           <Section anchor='form-elements' title='Form elements' text='Basic form elements list.'>

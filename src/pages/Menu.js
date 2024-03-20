@@ -72,6 +72,22 @@ const Menu = ({ menuState }) => {
         <ul>
           <li>
             &bull;{' '}
+            <a href='#button-groups' onClick={handleClickScroll}>
+              Button group
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            &bull;{' '}
+            <a href='#sliders' onClick={handleClickScroll}>
+              Slider
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            &bull;{' '}
             <a href='#form-elements' onClick={handleClickScroll}>
               Form elements
             </a>
