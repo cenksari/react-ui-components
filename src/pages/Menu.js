@@ -1,20 +1,16 @@
-const Menu = () => {
-  const menuState = () => {
-    const element = document.getElementsByClassName('menu')[0];
+import PropTypes from 'prop-types';
 
-    const currentDisplay = element.style.display;
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
-    if (currentDisplay === 'block') {
-      element.style.display = 'none';
-    } else {
-      element.style.display = 'block';
-    }
-  };
+const Menu = ({ menuState }) => {
+  const { width } = useWindowDimensions();
 
   const handleClickScroll = (e) => {
     e.preventDefault();
 
-    menuState();
+    if (width <= 800) {
+      menuState();
+    }
 
     document.location = e.target.href;
   };
@@ -252,7 +248,7 @@ const Menu = () => {
         <ul>
           <li>
             &bull;{' '}
-            <a href='#notification' onClick={handleClickScroll}>
+            <a href='#notifications' onClick={handleClickScroll}>
               Notification
             </a>
           </li>
@@ -304,7 +300,7 @@ const Menu = () => {
         <ul>
           <li>
             &bull;{' '}
-            <a href='#dropdown' onClick={handleClickScroll}>
+            <a href='#dropdowns' onClick={handleClickScroll}>
               Dropdown
             </a>
           </li>
@@ -312,7 +308,7 @@ const Menu = () => {
         <ul>
           <li>
             &bull;{' '}
-            <a href='#pagination' onClick={handleClickScroll}>
+            <a href='#paginations' onClick={handleClickScroll}>
               Pagination
             </a>
           </li>
@@ -330,7 +326,7 @@ const Menu = () => {
         <ul>
           <li>
             &bull;{' '}
-            <a href='#breadcrumb' onClick={handleClickScroll}>
+            <a href='#breadcrumbs' onClick={handleClickScroll}>
               Breadcrumb
             </a>
           </li>
@@ -338,7 +334,7 @@ const Menu = () => {
         <ul>
           <li>
             &bull;{' '}
-            <a href='#carousel' onClick={handleClickScroll}>
+            <a href='#carousels' onClick={handleClickScroll}>
               Carousel
             </a>
           </li>
@@ -346,6 +342,10 @@ const Menu = () => {
       </div>
     </div>
   );
+};
+
+Menu.propTypes = {
+  menuState: PropTypes.func.isRequired,
 };
 
 export default Menu;
