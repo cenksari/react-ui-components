@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 import PropTypes from 'prop-types';
 
-const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) => {
+const Pagination = memo(({ url, pageSize, totalRows, currentPage }) => {
   const totalPages = Math.floor((totalRows + pageSize - 1) / pageSize);
 
   if (totalPages < 1) {
@@ -12,6 +12,30 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
   if (currentPage > totalPages) {
     return null;
   }
+
+  const prevPage = () => {
+    let prev = currentPage;
+
+    if (prev > 1) {
+      prev = currentPage - 1;
+    } else {
+      prev = 1;
+    }
+
+    return prev;
+  };
+
+  const nextPage = () => {
+    let next = currentPage;
+
+    if (next < totalPages) {
+      next = currentPage + 1;
+    } else {
+      next = totalPages;
+    }
+
+    return next;
+  };
 
   const Pages = () => {
     const pageArray = [];
@@ -26,7 +50,7 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
       } else {
         pageArray.push(
           <li key={i}>
-            <a href={`/${url}?page=${i}`}>{i}</a>
+            <a href={`${url}?page=${i}`}>{i}</a>
           </li>
         );
       }
@@ -60,7 +84,7 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
   const handleSelectChange = (e) => {
     const curr = e.target.value;
 
-    document.location = `/${url}?page=${curr}`;
+    document.location = `${url}?page=${curr}`;
   };
 
   if (totalRows > 0 && totalRows > pageSize) {
@@ -68,25 +92,29 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
       return (
         <div className='paging'>
           <ul>
-            {+currentPage === 1 ? (
+            {currentPage === 1 ? (
               <>
                 <li className='disabled'>
-                  <span>&lt;&lt;</span>
+                  <span>
+                    <i className='material-icons'>skip_previous</i>
+                  </span>
                 </li>
                 <li className='disabled'>
-                  <span>&lt;</span>
+                  <span>
+                    <i className='material-icons'>navigate_before</i>
+                  </span>
                 </li>
               </>
             ) : (
               <>
                 <li>
-                  <a href={`/${url}?page=1`} title='First page'>
-                    &lt;&lt;
+                  <a href={`${url}?page=1`} title='First page'>
+                    <i className='material-icons'>skip_previous</i>
                   </a>
                 </li>
                 <li>
-                  <a href={`/${url}?page=${prev}`} title='Previous page'>
-                    &lt;
+                  <a href={`${url}?page=${prevPage()}`} title='Previous page'>
+                    <i className='material-icons'>navigate_before</i>
                   </a>
                 </li>
               </>
@@ -104,25 +132,29 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
               </select>
             </li>
 
-            {+currentPage >= totalPages ? (
+            {currentPage >= totalPages ? (
               <>
                 <li className='disabled'>
-                  <span>&gt;</span>
+                  <span>
+                    <i className='material-icons'>navigate_next</i>
+                  </span>
                 </li>
                 <li className='disabled'>
-                  <span>&gt;&gt;</span>
+                  <span>
+                    <i className='material-icons'>skip_next</i>
+                  </span>
                 </li>
               </>
             ) : (
               <>
                 <li>
-                  <a href={`/${url}?page=${next}`} title='Next page'>
-                    &gt;
+                  <a href={`${url}?page=${nextPage()}`} title='Next page'>
+                    <i className='material-icons'>navigate_next</i>
                   </a>
                 </li>
                 <li>
-                  <a href={`/${url}?page=${totalPages}`} title='Last page'>
-                    &gt;&gt;
+                  <a href={`${url}?page=${totalPages}`} title='Last page'>
+                    <i className='material-icons'>skip_next</i>
                   </a>
                 </li>
               </>
@@ -135,25 +167,29 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
     return (
       <div className='paging'>
         <ul>
-          {+currentPage === 1 ? (
+          {currentPage === 1 ? (
             <>
               <li className='disabled'>
-                <span>&lt;&lt;</span>
+                <span>
+                  <i className='material-icons'>skip_previous</i>
+                </span>
               </li>
               <li className='disabled'>
-                <span>&lt;</span>
+                <span>
+                  <i className='material-icons'>navigate_before</i>
+                </span>
               </li>
             </>
           ) : (
             <>
               <li>
-                <a href={`/${url}?page=1`} title='First page'>
-                  &lt;&lt;
+                <a href={`${url}?page=1`} title='First page'>
+                  <i className='material-icons'>skip_previous</i>
                 </a>
               </li>
               <li>
-                <a href={`/${url}?page=${prev}`} title='Previous page'>
-                  &lt;
+                <a href={`${url}?page=${prevPage()}`} title='Previous page'>
+                  <i className='material-icons'>navigate_before</i>
                 </a>
               </li>
             </>
@@ -161,25 +197,29 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
 
           <Pages />
 
-          {+currentPage >= totalPages ? (
+          {currentPage >= totalPages ? (
             <>
               <li className='disabled'>
-                <span>&gt;</span>
+                <span>
+                  <i className='material-icons'>navigate_next</i>
+                </span>
               </li>
               <li className='disabled'>
-                <span>&gt;&gt;</span>
+                <span>
+                  <i className='material-icons'>skip_next</i>
+                </span>
               </li>
             </>
           ) : (
             <>
               <li>
-                <a href={`/${url}?page=${next}`} title='Next page'>
-                  &gt;
+                <a href={`${url}?page=${nextPage()}`} title='Next page'>
+                  <i className='material-icons'>navigate_next</i>
                 </a>
               </li>
               <li>
-                <a href={`/${url}?page=${totalPages}`} title='Last page'>
-                  &gt;&gt;
+                <a href={`${url}?page=${totalPages}`} title='Last page'>
+                  <i className='material-icons'>skip_next</i>
                 </a>
               </li>
             </>
@@ -194,8 +234,6 @@ const Pagination = memo(({ url, prev, next, pageSize, totalRows, currentPage }) 
 
 Pagination.propTypes = {
   url: PropTypes.string.isRequired,
-  prev: PropTypes.number.isRequired,
-  next: PropTypes.number.isRequired,
   pageSize: PropTypes.number.isRequired,
   totalRows: PropTypes.number.isRequired,
   currentPage: PropTypes.number.isRequired,

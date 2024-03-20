@@ -157,11 +157,7 @@ function App() {
             <Dropdowns />
           </Section>
 
-          <Section
-            anchor='paginations'
-            title='Pagination'
-            text='Pagination components. You can also use color tags.'
-          >
+          <Section anchor='paginations' title='Pagination' text='Pagination components.'>
             <Paginations />
           </Section>
 

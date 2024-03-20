@@ -307,6 +307,7 @@ button.disabled {
 .select {
   color: var(--black);
   border: 1px solid var(--dark-gray);
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 99% center;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR4nO2UOwrAIBAF5xKReP+bJFV+TSxynATBQiSI0TXVDggW7htesYKiKIogE7ADRiDLZxzAXPJ4BW7ANcpNyPBZS8nAAJxh4AJshTTNGGsH7R/SFnmztEYuJv0iF5eWyLtJc/Lu0rfddMld4sPJErfs3jTFt9vC6d5UURSFmAePTDtnrV72/QAAAABJRU5ErkJggg==");
@@ -1116,11 +1117,13 @@ button.disabled {
 /* Pagination */
 .paging {
   display: flex;
-  font-size: 1.3em;
+  font-size: 1.2em;
   user-select: none;
 }
 
 .paging ul {
+  margin: 0 !important;
+  padding: 0 !important;
   border-radius: 10px;
   border: 1px solid var(--light-gray);
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
@@ -1129,6 +1132,7 @@ button.disabled {
 .paging ul li {
   float: left;
   background-color: var(--white);
+  border-right: 1px solid var(--light-gray);
 }
 
 .paging ul li:hover {
@@ -1141,16 +1145,32 @@ button.disabled {
 }
 
 .paging ul li:last-child {
+  border-right: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .paging ul li a,
 .paging ul li span {
-  padding: 10px;
+  margin: 0;
+  height: 44px;
+  line-height: 1;
   display: block;
+  min-width: 44px;
+  overflow: hidden;
+  text-align: center;
   color: var(--black);
   text-decoration: none;
+  padding: 14px 10px 10px 10px;
+}
+
+.paging ul li a i,
+.paging ul li span i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: -4px;
 }
 
 .paging ul li a:hover {
@@ -1173,18 +1193,16 @@ button.disabled {
 .paging ul li.active a,
 .paging ul li.active span {
   cursor: default;
-  color: var(--black);
   font-weight: 800;
+  color: var(--black);
 }
 
 .paging ul li select {
-  color: #333333;
-  background-size: 17px 17px;
+  border-radius: 0;
+  color: var(--black);
+  text-align: center;
+  padding: 7px 10px 7px 10px;
   background-color: var(--white);
-  padding: 9px 20px 9px 10px;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR4nO2UOwrAIBAF5xKReP+bJFV+TSxynATBQiSI0TXVDggW7htesYKiKIogE7ADRiDLZxzAXPJ4BW7ANcpNyPBZS8nAAJxh4AJshTTNGGsH7R/SFnmztEYuJv0iF5eWyLtJc/Lu0rfddMld4sPJErfs3jTFt9vC6d5UURSFmAePTDtnrV72/QAAAABJRU5ErkJggg==");
 }
 
 @media (max-width: 500px) {
