@@ -636,6 +636,10 @@ button.disabled {
   border-top-right-radius: 3px;
 }
 
+.tabs .tab-bar .tab button {
+  transform: none;
+}
+
 .tabs .tab-bar .tab a.active,
 .tabs .tab-bar .tab button.active {
   color: var(--white);
@@ -1396,6 +1400,35 @@ input[type="range" i]::-webkit-slider-thumb{
     90deg,
     var(--_c) 50%,
     var(--light-gray) 0) 0 1/calc(50% - var(--l)/2) 100vw/0 calc(100vw + var(--g));
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb button {
+  padding: 5px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.breadcrumb button:hover {
+  transform: none;
+  text-decoration: underline;
+}
+
+.breadcrumb button.disabled {
+  border: none;
+  color: var(--dark-gray);
+  background: transparent;
+}
+
+.breadcrumb i {
+  user-select: none;
+  margin: 2px 5px 0 5px;
+  display: inline-block;
 }
 
 @media (max-width: 500px) {

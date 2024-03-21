@@ -19,10 +19,10 @@ const Dropdowns = () => (
         &lt;Dropdown color=&apos;gray&apos;&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;First item&apos; /&gt;
+        &lt;DropdownItem text=&apos;First item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Second item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Second item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
         &lt;hr /&gt;
@@ -34,7 +34,7 @@ const Dropdowns = () => (
         &lt;hr /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Fourth item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Fourth item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Dropdown&gt;
       </code>
@@ -53,10 +53,10 @@ const Dropdowns = () => (
         &lt;Dropdown color=&apos;yellow&apos;&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;First item&apos; /&gt;
+        &lt;DropdownItem text=&apos;First item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Second item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Second item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
         &lt;hr /&gt;
@@ -68,7 +68,7 @@ const Dropdowns = () => (
         &lt;hr /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Fourth item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Fourth item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Dropdown&gt;
       </code>
@@ -87,10 +87,10 @@ const Dropdowns = () => (
         &lt;Dropdown color=&apos;purple&apos;&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;First item&apos; /&gt;
+        &lt;DropdownItem text=&apos;First item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Second item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Second item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
         &lt;hr /&gt;
@@ -102,7 +102,7 @@ const Dropdowns = () => (
         &lt;hr /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Fourth item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Fourth item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Dropdown&gt;
       </code>
@@ -121,10 +121,10 @@ const Dropdowns = () => (
         &lt;Dropdown color=&apos;red&apos;&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;First item&apos; /&gt;
+        &lt;DropdownItem text=&apos;First item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Second item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Second item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
         &lt;hr /&gt;
@@ -136,7 +136,7 @@ const Dropdowns = () => (
         &lt;hr /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Fourth item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Fourth item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Dropdown&gt;
       </code>
@@ -155,10 +155,10 @@ const Dropdowns = () => (
         &lt;Dropdown color=&apos;orange&apos;&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;First item&apos; /&gt;
+        &lt;DropdownItem text=&apos;First item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Second item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Second item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
         &lt;hr /&gt;
@@ -170,7 +170,7 @@ const Dropdowns = () => (
         &lt;hr /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Fourth item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Fourth item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Dropdown&gt;
       </code>
@@ -189,10 +189,10 @@ const Dropdowns = () => (
         &lt;Dropdown color=&apos;green&apos;&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;First item&apos; /&gt;
+        &lt;DropdownItem text=&apos;First item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Second item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Second item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
         &lt;hr /&gt;
@@ -204,7 +204,7 @@ const Dropdowns = () => (
         &lt;hr /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Fourth item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Fourth item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Dropdown&gt;
       </code>
@@ -223,10 +223,10 @@ const Dropdowns = () => (
         &lt;Dropdown color=&apos;blue&apos;&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;First item&apos; /&gt;
+        &lt;DropdownItem text=&apos;First item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Second item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Second item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
         &lt;hr /&gt;
@@ -238,7 +238,7 @@ const Dropdowns = () => (
         &lt;hr /&gt;
         <br />
         <span className='tab' />
-        &lt;DropdownItem text=&apos;Fourth item&apos; /&gt;
+        &lt;DropdownItem text=&apos;Fourth item&apos; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Dropdown&gt;
       </code>

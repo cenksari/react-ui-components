@@ -12,10 +12,13 @@ const Buttons = () => (
       <Button type='button' text='The button' color='gray-overlay' rightIcon='arrow_forward' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;gray-filled&quot;
-        leftIcon=&quot;arrow_forward&quot; /&gt;
+        leftIcon=&quot;arrow_forward&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;gray-overlay&quot; rightIcon=&quot;arrow_forward&quot; /&gt;
+        color=&quot;gray-overlay&quot; rightIcon=&quot;arrow_forward&quot; onClick={
+          '{() => {}}'
+        }{' '}
+        /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -26,10 +29,10 @@ const Buttons = () => (
       <Button type='button' text='The button' color='yellow-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;yellow-filled&quot; /&gt;
+        color=&quot;yellow-filled&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;yellow-overlay&quot; /&gt;
+        color=&quot;yellow-overlay&quot; onClick={'{() => {}}'} /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -40,10 +43,10 @@ const Buttons = () => (
       <Button type='button' text='The button' color='purple-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;purple-filled&quot; /&gt;
+        color=&quot;purple-filled&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;purple-overlay&quot; /&gt;
+        color=&quot;purple-overlay&quot; onClick={'{() => {}}'} /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -54,9 +57,11 @@ const Buttons = () => (
       <Button type='button' text='The button' color='red-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;red-filled&quot;
+        onClick={'{() => {}}'}
         /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;red-overlay&quot;
+        onClick={'{() => {}}'}
         /&gt;
       </code>
     </Row>
@@ -68,10 +73,10 @@ const Buttons = () => (
       <Button type='button' text='The button' color='orange-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;orange-filled&quot; /&gt;
+        color=&quot;orange-filled&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;orange-overlay&quot; /&gt;
+        color=&quot;orange-overlay&quot; onClick={'{() => {}}'} /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -82,10 +87,10 @@ const Buttons = () => (
       <Button type='button' text='The button' color='green-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;green-filled&quot; /&gt;
+        color=&quot;green-filled&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;green-overlay&quot; /&gt;
+        color=&quot;green-overlay&quot; onClick={'{() => {}}'} /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>
@@ -96,10 +101,11 @@ const Buttons = () => (
       <Button type='button' text='The button' color='blue-overlay' />
       <code>
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot; color=&quot;blue-filled&quot;
+        onClick={'{() => {}}'}
         /&gt;
         <br />
         &lt;Button type=&quot;button&quot; text=&quot;The button&quot;
-        color=&quot;blue-overlay&quot; /&gt;
+        color=&quot;blue-overlay&quot; onClick={'{() => {}}'} /&gt;
       </code>
     </Row>
     <Row className='margin-bottom'>

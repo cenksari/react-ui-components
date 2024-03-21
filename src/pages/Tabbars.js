@@ -21,10 +21,10 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 2&quot; /&gt;
+        &lt;Tab text=&quot;Tab 2&quot; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 3&quot; /&gt;
+        &lt;Tab text=&quot;Tab 3&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Tabs&gt;
         <br />
@@ -52,10 +52,10 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 2&quot; /&gt;
+        &lt;Tab text=&quot;Tab 2&quot; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 3&quot; /&gt;
+        &lt;Tab text=&quot;Tab 3&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Tabs&gt;
         <br />
@@ -83,10 +83,10 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 2&quot; /&gt;
+        &lt;Tab text=&quot;Tab 2&quot; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 3&quot; /&gt;
+        &lt;Tab text=&quot;Tab 3&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Tabs&gt;
         <br />
@@ -114,10 +114,10 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 2&quot; /&gt;
+        &lt;Tab text=&quot;Tab 2&quot; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 3&quot; /&gt;
+        &lt;Tab text=&quot;Tab 3&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Tabs&gt;
         <br />
@@ -145,10 +145,10 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 2&quot; /&gt;
+        &lt;Tab text=&quot;Tab 2&quot; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 3&quot; /&gt;
+        &lt;Tab text=&quot;Tab 3&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Tabs&gt;
         <br />
@@ -176,10 +176,10 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 2&quot; /&gt;
+        &lt;Tab text=&quot;Tab 2&quot; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 3&quot; /&gt;
+        &lt;Tab text=&quot;Tab 3&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Tabs&gt;
         <br />
@@ -207,10 +207,10 @@ const Tabbars = () => (
         &lt;Tab text=&quot;Tab 1&quot; active /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 2&quot; /&gt;
+        &lt;Tab text=&quot;Tab 2&quot; onClick={'{() => {}}'} /&gt;
         <br />
         <span className='tab' />
-        &lt;Tab text=&quot;Tab 3&quot; /&gt;
+        &lt;Tab text=&quot;Tab 3&quot; onClick={'{() => {}}'} /&gt;
         <br />
         &lt;/Tabs&gt;
         <br />
