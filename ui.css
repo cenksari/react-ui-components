@@ -1332,6 +1332,72 @@ button.disabled {
   background-color: var(--blue);
 }
 
+/* Sliders */
+input[type="range"] {
+  --g: 8px; /* gap */
+  --l: 5px; /* line thickness */
+  --s: 30px; /* thumb size */
+
+  width: 100%;
+  cursor: pointer;
+  height: var(--s);
+  overflow: hidden;
+  appearance :none;
+  background: none;
+  border-radius: 50em;
+}
+
+input[type="range"].gray {
+  --_c: var(--gray);
+}
+
+input[type="range"].yellow {
+  --_c: var(--yellow);
+}
+
+input[type="range"].purple {
+  --_c: var(--purple);
+}
+
+input[type="range"].red {
+  --_c: var(--red);
+}
+
+input[type="range"].orange {
+  --_c: var(--orange);
+}
+
+input[type="range"].green {
+  --_c: var(--green);
+}
+
+input[type="range"].blue {
+  --_c: var(--blue);
+}
+
+input[type="range"]:focus-visible,
+input[type="range"]:hover{
+  --p: 25%;
+}
+
+input[type="range"]:active,
+input[type="range"]:focus-visible{
+  --_b: var(--s)
+}
+
+input[type="range" i]::-webkit-slider-thumb{
+  transition: .3s;
+  aspect-ratio: 1;
+  height: var(--s);
+  appearance: none;
+  border-radius: 50em;
+  box-shadow: 0 0 0 var(--_b, var(--l)) inset var(--_c);
+  border-image: linear-gradient(
+    90deg,
+    var(--_c) 50%,
+    var(--light-gray) 0) 0 1/calc(50% - var(--l)/2) 100vw/0 calc(100vw + var(--g));
+}
+
 @media (max-width: 500px) {
   .card {
     width: 100%;
