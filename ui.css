@@ -140,10 +140,6 @@ button {
   background: transparent;
 }
 
-button:active {
-  transform: scale(0.99);
-}
-
 button i {
   margin-top: -3px;
   width: 22px !important;
@@ -636,10 +632,6 @@ button.disabled {
   border-top-right-radius: 3px;
 }
 
-.tabs .tab-bar .tab button {
-  transform: none;
-}
-
 .tabs .tab-bar .tab a.active,
 .tabs .tab-bar .tab button.active {
   color: var(--white);
@@ -953,7 +945,6 @@ button.disabled {
 }
 
 .dropdown button:hover {
-  transform: none;
   color: var(--white);
 }
 
@@ -1063,10 +1054,6 @@ button.disabled {
   border-radius: 4px !important;
 }
 
-.dialog .title button:hover {
-  transform: none;
-}
-
 .dialog .title button i {
   margin-top: 0 !important;
 }
@@ -1108,10 +1095,6 @@ button.disabled {
   color: var(--white);
   background-color: var(--red);
   border-radius: 4px !important;
-}
-
-.modal .title button:hover {
-  transform: none;
 }
 
 .modal .title button i {
@@ -1218,10 +1201,6 @@ button.disabled {
 .button-group button {
   padding: 15px;
   border-radius: 0;
-}
-
-.button-group button:hover {
-  transform: none;
 }
 
 .button-group button.active {
@@ -1415,7 +1394,6 @@ input[type="range" i]::-webkit-slider-thumb{
 }
 
 .breadcrumb button:hover {
-  transform: none;
   text-decoration: underline;
 }
 
