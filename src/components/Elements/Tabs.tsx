@@ -5,10 +5,12 @@ interface IProps {
   color: string;
 }
 
-const Tabs = memo(({ children, color }: IProps): React.JSX.Element => (
-  <div className='tabs'>
-    <div className={`tab-bar ${color}`}>{children}</div>
-  </div>
-));
+const Tabs = memo(
+  ({ children, color }: IProps): React.JSX.Element => (
+    <div className='tabs'>
+      <div className={`tab-bar ${color}`}>{children}</div>
+    </div>
+  )
+);
 
 export default Tabs;

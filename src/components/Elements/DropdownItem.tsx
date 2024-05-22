@@ -6,10 +6,12 @@ interface IProps {
   onClick?: () => void;
 }
 
-const DropdownItem = memo(({ text, active = false, onClick = () => {} }: IProps): React.JSX.Element => (
-  <button type='button' className={active ? 'active' : 'passive'} onClick={onClick}>
-    {text}
-  </button>
-));
+const DropdownItem = memo(
+  ({ text, active = false, onClick = () => {} }: IProps): React.JSX.Element => (
+    <button type='button' className={active ? 'active' : 'passive'} onClick={onClick}>
+      {text}
+    </button>
+  )
+);
 
 export default DropdownItem;

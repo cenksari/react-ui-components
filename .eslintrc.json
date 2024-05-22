@@ -8,6 +8,14 @@
       "version": "detect"
     }
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -28,6 +36,7 @@
     "prettier/prettier": "error",
     "no-use-before-define": "error",
     "newline-before-return": "error",
+    "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
     "jsx-quotes": ["error", "prefer-single"],

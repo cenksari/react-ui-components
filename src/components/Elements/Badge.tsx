@@ -5,6 +5,8 @@ interface IProps {
   color: string;
 }
 
-const Badge = memo(({ text, color }: IProps): React.JSX.Element => <span className={`badge ${color}`}>{text}</span>);
+const Badge = memo(
+  ({ text, color }: IProps): React.JSX.Element => <span className={`badge ${color}`}>{text}</span>
+);
 
 export default Badge;

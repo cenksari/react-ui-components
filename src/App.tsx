@@ -187,6 +187,6 @@ const App = (): React.JSX.Element => {
       </footer>
     </>
   );
-}
+};
 
 export default App;

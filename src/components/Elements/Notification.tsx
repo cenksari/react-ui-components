@@ -5,8 +5,10 @@ interface IProps {
   color: string;
 }
 
-const Notification = memo(({ text, color }: IProps): React.JSX.Element => (
-  <span className={`notification ${color}`}>{text}</span>
-));
+const Notification = memo(
+  ({ text, color }: IProps): React.JSX.Element => (
+    <span className={`notification ${color}`}>{text}</span>
+  )
+);
 
 export default Notification;

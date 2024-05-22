@@ -5,8 +5,10 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const ButtonGroup = memo(({ color, children }: IProps): React.JSX.Element => (
-  <div className={`button-group ${color}`}>{children}</div>
-));
+const ButtonGroup = memo(
+  ({ color, children }: IProps): React.JSX.Element => (
+    <div className={`button-group ${color}`}>{children}</div>
+  )
+);
 
 export default ButtonGroup;
