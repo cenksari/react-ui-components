@@ -1,14 +1,12 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   children: React.ReactNode;
   className?: string;
 }
 
-const Row = memo(
-  ({ children, className }: IProps): React.JSX.Element => (
-    <div className={className ? `row ${className}` : 'row'}>{children}</div>
-  )
+const Row = ({ children, className }: IProps): React.JSX.Element => (
+  <div className={className ? `row ${className}` : 'row'}>{children}</div>
 );
 
 export default Row;

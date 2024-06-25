@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   text: string;
@@ -6,14 +6,12 @@ interface IProps {
   onClick?: () => void;
 }
 
-const Tab = memo(
-  ({ text, active = false, onClick = () => {} }: IProps): React.JSX.Element => (
-    <div className='tab'>
-      <button type='button' className={active ? 'active' : 'passive'} onClick={onClick}>
-        {text}
-      </button>
-    </div>
-  )
+const Tab = ({ text, active = false, onClick = () => {} }: IProps): React.JSX.Element => (
+  <div className='tab'>
+    <button type='button' className={active ? 'active' : 'passive'} onClick={onClick}>
+      {text}
+    </button>
+  </div>
 );
 
 export default Tab;

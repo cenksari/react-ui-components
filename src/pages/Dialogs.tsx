@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 
 import Row from '../components/Containers/Row';
 import Button from '../components/Buttons/Button';
@@ -6,8 +6,8 @@ import Dialog from '../components/Elements/Dialog';
 import Heading from '../components/Elements/Heading';
 
 const Dialogs = (): React.JSX.Element => {
-  const [dialogActionShow, setDialogActionShow] = useState<boolean>(false);
-  const [dialogClassicShow, setDialogClassicShow] = useState<boolean>(false);
+  const [dialogActionShow, setDialogActionShow] = React.useState<boolean>(false);
+  const [dialogClassicShow, setDialogClassicShow] = React.useState<boolean>(false);
 
   return (
     <>

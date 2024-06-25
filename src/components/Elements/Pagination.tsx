@@ -1,4 +1,7 @@
-import { memo } from 'react';
+import React from 'react';
+
+import Pages from './Pages';
+import PagesSelect from './PagesSelect';
 
 interface IProps {
   url: string;
@@ -7,15 +10,20 @@ interface IProps {
   currentPage: number;
 }
 
-const Pagination = memo(({ url, pageSize, totalRows, currentPage }: IProps): React.JSX.Element => {
+const Pagination = ({
+  url,
+  pageSize,
+  totalRows,
+  currentPage,
+}: IProps): React.JSX.Element | null => {
   const totalPages = Math.floor((totalRows + pageSize - 1) / pageSize);
 
   if (totalPages < 1) {
-    return <></>;
+    return null;
   }
 
   if (currentPage > totalPages) {
-    return <></>;
+    return null;
   }
 
   const prevPage = () => {
@@ -40,50 +48,6 @@ const Pagination = memo(({ url, pageSize, totalRows, currentPage }: IProps): Rea
     }
 
     return next;
-  };
-
-  const Pages = () => {
-    const pageArray = [];
-
-    for (let i = 1; i <= totalPages; i += 1) {
-      if (i === +currentPage) {
-        pageArray.push(
-          <li key={i} className='active' title='Current page'>
-            <span>{i}</span>
-          </li>
-        );
-      } else {
-        pageArray.push(
-          <li key={i}>
-            <a href={`${url}?page=${i}`}>{i}</a>
-          </li>
-        );
-      }
-    }
-
-    return pageArray;
-  };
-
-  const PagesSelect = () => {
-    const pageArray = [];
-
-    for (let i = 1; i <= totalPages; i += 1) {
-      if (i === +currentPage) {
-        pageArray.push(
-          <option key={i} value={i} disabled>
-            {i}
-          </option>
-        );
-      } else {
-        pageArray.push(
-          <option key={i} value={i}>
-            {i}
-          </option>
-        );
-      }
-    }
-
-    return pageArray;
   };
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -133,7 +97,7 @@ const Pagination = memo(({ url, pageSize, totalRows, currentPage }: IProps): Rea
                 defaultValue={currentPage}
                 onChange={handleSelectChange}
               >
-                <PagesSelect />
+                <PagesSelect totalPages={totalPages} currentPage={currentPage} />
               </select>
             </li>
 
@@ -200,7 +164,7 @@ const Pagination = memo(({ url, pageSize, totalRows, currentPage }: IProps): Rea
             </>
           )}
 
-          <Pages />
+          <Pages url={url} totalPages={totalPages} currentPage={currentPage} />
 
           {currentPage >= totalPages ? (
             <>
@@ -234,7 +198,7 @@ const Pagination = memo(({ url, pageSize, totalRows, currentPage }: IProps): Rea
     );
   }
 
-  return <></>;
-});
+  return null;
+};
 
 export default Pagination;

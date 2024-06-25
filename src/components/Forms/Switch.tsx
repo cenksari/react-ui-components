@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   name: string;
@@ -7,16 +7,14 @@ interface IProps {
   description?: string;
 }
 
-const Switch = memo(
-  ({ name, checked = false, color, description }: IProps): React.JSX.Element => (
-    <div className='switch-container'>
-      <label className={`switch ${color}`}>
-        <input name={name} type='checkbox' defaultChecked={checked} />
-        <span className='slider round' />
-      </label>
-      {description && <span className='switch-description'>{description}</span>}
-    </div>
-  )
+const Switch = ({ name, checked = false, color, description }: IProps): React.JSX.Element => (
+  <div className='switch-container'>
+    <label className={`switch ${color}`}>
+      <input name={name} type='checkbox' defaultChecked={checked} />
+      <span className='slider round' />
+    </label>
+    {description && <span className='switch-description'>{description}</span>}
+  </div>
 );
 
 export default Switch;

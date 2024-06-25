@@ -1,11 +1,11 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   text: string;
   type: string;
 }
 
-const Alert = memo(({ text, type }: IProps): React.JSX.Element => {
+const Alert = ({ text, type }: IProps): React.JSX.Element | null => {
   if (type === 'info') {
     return (
       <div className='alert info'>
@@ -42,7 +42,7 @@ const Alert = memo(({ text, type }: IProps): React.JSX.Element => {
     );
   }
 
-  return <></>;
-});
+  return null;
+};
 
 export default Alert;

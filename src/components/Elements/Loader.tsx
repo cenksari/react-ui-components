@@ -1,11 +1,11 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   type: string;
   color: string;
 }
 
-const Loader = memo(({ type, color }: IProps): React.JSX.Element => {
+const Loader = ({ type, color }: IProps): React.JSX.Element => {
   if (type === 'inline') {
     return (
       <div className={`loader ${color}`}>
@@ -155,6 +155,6 @@ const Loader = memo(({ type, color }: IProps): React.JSX.Element => {
       </div>
     </div>
   );
-});
+};
 
 export default Loader;

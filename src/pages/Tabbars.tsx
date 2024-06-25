@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Row from '../components/Containers/Row';
 import Tab from '../components/Elements/Tab';
 import Tabs from '../components/Elements/Tabs';

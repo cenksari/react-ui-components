@@ -3,7 +3,7 @@
   --blue: #0a56ea;
   --gray: #3e4649;
   --black: #333333;
-  --green: #4ed34e  ;
+  --green: #4ed34e;
   --white: #ffffff;
   --yellow: #ffca0c;
   --purple: #8852f6;
@@ -48,15 +48,20 @@ h6 {
   margin: 0 0 10px 0;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   padding: 15px;
   overflow: auto;
   color: var(--black);
   border-radius: 10px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   resize: none;
   line-height: 160%;
@@ -85,7 +90,7 @@ strong {
 }
 
 .flex-v-center {
-  vertical-align: center;;
+  vertical-align: center;
 }
 
 .flex-space-between {
@@ -306,7 +311,7 @@ button.disabled {
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 99% center;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR4nO2UOwrAIBAF5xKReP+bJFV+TSxynATBQiSI0TXVDggW7htesYKiKIogE7ADRiDLZxzAXPJ4BW7ANcpNyPBZS8nAAJxh4AJshTTNGGsH7R/SFnmztEYuJv0iF5eWyLtJc/Lu0rfddMld4sPJErfs3jTFt9vC6d5UURSFmAePTDtnrV72/QAAAABJRU5ErkJggg==");
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgklEQVR4nO2UOwrAIBAF5xKReP+bJFV+TSxynATBQiSI0TXVDggW7htesYKiKIogE7ADRiDLZxzAXPJ4BW7ANcpNyPBZS8nAAJxh4AJshTTNGGsH7R/SFnmztEYuJv0iF5eWyLtJc/Lu0rfddMld4sPJErfs3jTFt9vC6d5UURSFmAePTDtnrV72/QAAAABJRU5ErkJggg==');
 }
 
 .select * {
@@ -931,7 +936,7 @@ button.disabled {
   border-radius: 10px;
   display: inline-block;
   background-color: var(--light-gray);
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .dropdown button {
@@ -1016,7 +1021,7 @@ button.disabled {
   z-index: 99999999;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .dialog {
@@ -1026,7 +1031,7 @@ button.disabled {
   position: absolute;
   border-radius: 20px;
   background-color: #ffffff;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .dialog .title {
@@ -1075,7 +1080,7 @@ button.disabled {
   position: absolute;
   border-radius: 20px;
   background-color: #ffffff;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .modal .title {
@@ -1316,7 +1321,7 @@ button.disabled {
 }
 
 /* Sliders */
-input[type="range"] {
+input[type='range'] {
   --g: 8px; /* gap */
   --l: 5px; /* line thickness */
   --s: 30px; /* thumb size */
@@ -1325,60 +1330,58 @@ input[type="range"] {
   cursor: pointer;
   height: var(--s);
   overflow: hidden;
-  appearance :none;
+  appearance: none;
   background: none;
   border-radius: 50em;
 }
 
-input[type="range"].gray {
+input[type='range'].gray {
   --_c: var(--gray);
 }
 
-input[type="range"].yellow {
+input[type='range'].yellow {
   --_c: var(--yellow);
 }
 
-input[type="range"].purple {
+input[type='range'].purple {
   --_c: var(--purple);
 }
 
-input[type="range"].red {
+input[type='range'].red {
   --_c: var(--red);
 }
 
-input[type="range"].orange {
+input[type='range'].orange {
   --_c: var(--orange);
 }
 
-input[type="range"].green {
+input[type='range'].green {
   --_c: var(--green);
 }
 
-input[type="range"].blue {
+input[type='range'].blue {
   --_c: var(--blue);
 }
 
-input[type="range"]:focus-visible,
-input[type="range"]:hover{
+input[type='range']:focus-visible,
+input[type='range']:hover {
   --p: 25%;
 }
 
-input[type="range"]:active,
-input[type="range"]:focus-visible{
-  --_b: var(--s)
+input[type='range']:active,
+input[type='range']:focus-visible {
+  --_b: var(--s);
 }
 
-input[type="range" i]::-webkit-slider-thumb{
-  transition: .3s;
+input[type='range' i]::-webkit-slider-thumb {
+  transition: 0.3s;
   aspect-ratio: 1;
   height: var(--s);
   appearance: none;
   border-radius: 50em;
   box-shadow: 0 0 0 var(--_b, var(--l)) inset var(--_c);
-  border-image: linear-gradient(
-    90deg,
-    var(--_c) 50%,
-    var(--light-gray) 0) 0 1/calc(50% - var(--l)/2) 100vw/0 calc(100vw + var(--g));
+  border-image: linear-gradient(90deg, var(--_c) 50%, var(--light-gray) 0) 0 1 /
+    calc(50% - var(--l) / 2) 100vw/0 calc(100vw + var(--g));
 }
 
 /* Breadcrumbs */

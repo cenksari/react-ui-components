@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Row from '../components/Containers/Row';
 import Pagination from '../components/Elements/Pagination';
 import Heading from '../components/Elements/Heading';

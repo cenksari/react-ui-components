@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import React from 'react';
 
 import Row from '../components/Containers/Row';
 import Button from '../components/Buttons/Button';
 import Modal from '../components/Elements/Modal';
 
 const Modals = (): React.JSX.Element => {
-  const [showModal, setShowModal] = useState<boolean>(false);
+  const [showModal, setShowModal] = React.useState<boolean>(false);
 
   return (
     <Row className='margin-bottom'>

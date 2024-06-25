@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Row from '../components/Containers/Row';
 import Breadcrumb from '../components/Elements/Breadcrumb';
 import BreadcrumbItem from '../components/Elements/BreadcrumbItem';

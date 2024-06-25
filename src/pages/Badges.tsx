@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Row from '../components/Containers/Row';
 import Badge from '../components/Elements/Badge';
 

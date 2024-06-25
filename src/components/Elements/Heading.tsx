@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   text: string;
@@ -6,7 +6,7 @@ interface IProps {
   color: string;
 }
 
-const Heading = memo(({ text, type, color }: IProps): React.JSX.Element => {
+const Heading = ({ text, type, color }: IProps): React.JSX.Element | null => {
   if (type === 1) {
     return <h1 className={color}>{text}</h1>;
   }
@@ -31,7 +31,7 @@ const Heading = memo(({ text, type, color }: IProps): React.JSX.Element => {
     return <h6 className={color}>{text}</h6>;
   }
 
-  return <></>;
-});
+  return null;
+};
 
 export default Heading;

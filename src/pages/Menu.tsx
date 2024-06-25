@@ -1,3 +1,5 @@
+import React from 'react';
+
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
 interface IProps {

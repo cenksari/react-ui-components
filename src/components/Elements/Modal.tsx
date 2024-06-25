@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   show: boolean;
@@ -6,7 +6,11 @@ interface IProps {
   closeModalFunction: () => void;
 }
 
-const Modal = memo(({ show = false, children, closeModalFunction }: IProps): React.JSX.Element => {
+const Modal = ({
+  show = false,
+  children,
+  closeModalFunction,
+}: IProps): React.JSX.Element | null => {
   if (show) {
     return (
       <div className='modal-backdrop'>
@@ -22,7 +26,7 @@ const Modal = memo(({ show = false, children, closeModalFunction }: IProps): Rea
     );
   }
 
-  return <></>;
-});
+  return null;
+};
 
 export default Modal;

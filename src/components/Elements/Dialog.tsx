@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React from 'react';
 
 import Button from '../Buttons/Button';
 
@@ -12,50 +12,48 @@ interface IProps {
   closeDialogFunction: () => void;
 }
 
-const Dialog = memo(
-  ({
-    show = false,
-    color,
-    title,
-    content,
-    actionButtonText,
-    actionButtonFunction = () => {},
-    closeDialogFunction,
-  }: IProps): React.JSX.Element => {
-    if (show) {
-      return (
-        <div className='modal-backdrop'>
-          <div className='dialog'>
-            <div className='title flex flex-h-center flex-space-between'>
-              <h4>{title}</h4>
-              <button type='button' onClick={closeDialogFunction}>
-                <i className='material-icons'>close</i>
-              </button>
-            </div>
-            <div className='contents'>{content}</div>
-            <div className='buttons'>
-              {actionButtonText && actionButtonFunction && (
-                <Button
-                  type='button'
-                  text={actionButtonText}
-                  color={`${color}-filled`}
-                  onClick={actionButtonFunction}
-                />
-              )}
+const Dialog = ({
+  show = false,
+  color,
+  title,
+  content,
+  actionButtonText,
+  actionButtonFunction = () => {},
+  closeDialogFunction,
+}: IProps): React.JSX.Element | null => {
+  if (show) {
+    return (
+      <div className='modal-backdrop'>
+        <div className='dialog'>
+          <div className='title flex flex-h-center flex-space-between'>
+            <h4>{title}</h4>
+            <button type='button' onClick={closeDialogFunction}>
+              <i className='material-icons'>close</i>
+            </button>
+          </div>
+          <div className='contents'>{content}</div>
+          <div className='buttons'>
+            {actionButtonText && actionButtonFunction && (
               <Button
                 type='button'
-                text='Close'
-                color={`${color}-overlay`}
-                onClick={closeDialogFunction}
+                text={actionButtonText}
+                color={`${color}-filled`}
+                onClick={actionButtonFunction}
               />
-            </div>
+            )}
+            <Button
+              type='button'
+              text='Close'
+              color={`${color}-overlay`}
+              onClick={closeDialogFunction}
+            />
           </div>
         </div>
-      );
-    }
-
-    return <></>;
+      </div>
+    );
   }
-);
+
+  return null;
+};
 
 export default Dialog;

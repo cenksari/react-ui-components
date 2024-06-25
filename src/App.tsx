@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Menu from './pages/Menu';
 import Section from './pages/Section';
 import Introduction from './pages/Introduction';

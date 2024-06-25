@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import React from 'react';
 
 interface IProps {
   size: string;
@@ -7,7 +7,7 @@ interface IProps {
   image?: string;
 }
 
-const ProfilePhoto = memo(({ color, size = 'small', text, image }: IProps): React.JSX.Element => {
+const ProfilePhoto = ({ color, size = 'small', text, image }: IProps): React.JSX.Element => {
   if (!image) {
     return (
       <div className='profile-photo'>
@@ -22,6 +22,6 @@ const ProfilePhoto = memo(({ color, size = 'small', text, image }: IProps): Reac
       {text && <span>{text}</span>}
     </div>
   );
-});
+};
 
 export default ProfilePhoto;
