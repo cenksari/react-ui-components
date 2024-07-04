@@ -6,7 +6,7 @@ If you like this resource, please follow me on GitHub. Thank you!
 
 ## Demo
 
-[https://cenksari.github.io/react-ui-components/](https://cenksari.github.io/react-ui-components/)
+[https://react-ui-components-kappa.vercel.app/](https://react-ui-components-kappa.vercel.app/)
 
 ## Screenshots
 
