@@ -6,11 +6,11 @@ Whether you're building a web application, a mobile app, or a desktop applicatio
 
 **Key Features**
 
-* **Extensive Component Library**: A diverse set of components to cover all aspects of your application's UI.
-* **Customizable**: Easily modify components to fit your project's unique style and branding.
-* **Responsive Design**: Components are designed to adapt seamlessly to different screen sizes and devices.
-* **Easy Integration**: Simple to integrate into your existing React project or use as a starting point for a new one.
-* **Active Maintenance**: Regular updates with new components, features, and improvements.
+- **Extensive Component Library**: A diverse set of components to cover all aspects of your application's UI.
+- **Customizable**: Easily modify components to fit your project's unique style and branding.
+- **Responsive Design**: Components are designed to adapt seamlessly to different screen sizes and devices.
+- **Easy Integration**: Simple to integrate into your existing React project or use as a starting point for a new one.
+- **Active Maintenance**: Regular updates with new components, features, and improvements.
 
 **Get Started**
 
