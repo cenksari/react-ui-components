@@ -13,7 +13,7 @@ const Cards = (): React.JSX.Element => (
         size='large'
         color='blue'
         title='Card title goes here'
-        image='https://www.cenksari.com/content/bg2.jpg'
+        image='https://www.cenksari.com/images/background-code.jpg'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         button1Text='First button'
         button2Text='Second button'
@@ -31,7 +31,7 @@ const Cards = (): React.JSX.Element => (
         title=&apos;Card title goes here&apos;
         <br />
         <span className='tab' />
-        image=&apos;https://www.cenksari.com/content/bg2.jpg&apos;
+        image=&apos;https://www.cenksari.com/images/background-code.jpg&apos;
         <br />
         <span className='tab' />
         content=&apos;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -53,7 +53,7 @@ const Cards = (): React.JSX.Element => (
         size='medium'
         color='orange'
         title='Card title goes here'
-        image='https://www.cenksari.com/content/bg2.jpg'
+        image='https://www.cenksari.com/images/background-code.jpg'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         button1Text='First button'
       />
@@ -70,7 +70,7 @@ const Cards = (): React.JSX.Element => (
         title=&apos;Card title goes here&apos;
         <br />
         <span className='tab' />
-        image=&apos;https://www.cenksari.com/content/bg2.jpg&apos;
+        image=&apos;https://www.cenksari.com/images/background-code.jpg&apos;
         <br />
         <span className='tab' />
         content=&apos;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -89,7 +89,7 @@ const Cards = (): React.JSX.Element => (
         size='small'
         color='red'
         title='Card title goes here'
-        image='https://www.cenksari.com/content/bg2.jpg'
+        image='https://www.cenksari.com/images/background-code.jpg'
         content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
         button1Text='First button'
       />
@@ -106,7 +106,7 @@ const Cards = (): React.JSX.Element => (
         title=&apos;Card title goes here&apos;
         <br />
         <span className='tab' />
-        image=&apos;https://www.cenksari.com/content/bg2.jpg&apos;
+        image=&apos;https://www.cenksari.com/images/background-code.jpg&apos;
         <br />
         <span className='tab' />
         content=&apos;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
