@@ -1,9 +1,7 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Notification from '../components/Elements/Notification';
 
-const Notifications = (): React.JSX.Element => (
+const Notifications = (): JSX.Element => (
   <Row className='margin-bottom'>
     <Notification text='1' color='gray' />
     <Notification text='5' color='yellow' />

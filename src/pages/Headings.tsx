@@ -1,9 +1,7 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 
-const Headings = (): React.JSX.Element => (
+const Headings = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='h1' id='h1' href='#h1' />

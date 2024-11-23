@@ -1,10 +1,8 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import ButtonGroup from '../components/Buttons/ButtonGroup';
 import ButtonGroupItem from '../components/Buttons/ButtonGroupItem';
 
-const ButtonGroups = (): React.JSX.Element => (
+const ButtonGroups = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <ButtonGroup color='gray'>

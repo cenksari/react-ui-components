@@ -1,16 +1,10 @@
-import React from 'react';
-
 interface IProps {
   show: boolean;
   children: React.ReactNode;
   closeModalFunction: () => void;
 }
 
-const Modal = ({
-  show = false,
-  children,
-  closeModalFunction,
-}: IProps): React.JSX.Element | null => {
+const Modal = ({ show = false, children, closeModalFunction }: IProps): JSX.Element | null => {
   if (show) {
     return (
       <div className='modal-backdrop'>

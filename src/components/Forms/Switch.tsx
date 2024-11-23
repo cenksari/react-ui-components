@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface IProps {
   name: string;
   checked?: boolean;
@@ -7,7 +5,7 @@ interface IProps {
   description?: string;
 }
 
-const Switch = ({ name, checked = false, color, description }: IProps): React.JSX.Element => (
+const Switch = ({ name, checked = false, color, description }: IProps): JSX.Element => (
   <div className='switch-container'>
     <label className={`switch ${color}`}>
       <input name={name} type='checkbox' defaultChecked={checked} />

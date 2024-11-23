@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface IProps {
   name: string;
   color: string;
@@ -9,14 +7,7 @@ interface IProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Slider = ({
-  name,
-  color,
-  min,
-  max,
-  value,
-  onChange = () => {},
-}: IProps): React.JSX.Element => (
+const Slider = ({ name, color, min, max, value, onChange = () => {} }: IProps): JSX.Element => (
   <input
     type='range'
     className={color}

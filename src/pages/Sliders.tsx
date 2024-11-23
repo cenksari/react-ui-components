@@ -1,16 +1,16 @@
-import React from 'react';
+import { useState } from 'react';
 
 import Row from '../components/Containers/Row';
 import Slider from '../components/Forms/Slider';
 
-const Sliders = (): React.JSX.Element => {
-  const [value1, setValue1] = React.useState<number>(1);
-  const [value2, setValue2] = React.useState<number>(2);
-  const [value3, setValue3] = React.useState<number>(3);
-  const [value4, setValue4] = React.useState<number>(4);
-  const [value5, setValue5] = React.useState<number>(5);
-  const [value6, setValue6] = React.useState<number>(6);
-  const [value7, setValue7] = React.useState<number>(7);
+const Sliders = (): JSX.Element => {
+  const [value1, setValue1] = useState<number>(1);
+  const [value2, setValue2] = useState<number>(2);
+  const [value3, setValue3] = useState<number>(3);
+  const [value4, setValue4] = useState<number>(4);
+  const [value5, setValue5] = useState<number>(5);
+  const [value6, setValue6] = useState<number>(6);
+  const [value7, setValue7] = useState<number>(7);
 
   const handleChange1 = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue1(+e.target.value);

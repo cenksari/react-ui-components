@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Button from '../Buttons/Button';
 
 interface IProps {
@@ -20,7 +18,7 @@ const Card = ({
   image,
   button1Text,
   button2Text,
-}: IProps): React.JSX.Element => (
+}: IProps): JSX.Element => (
   <div className={`card ${size}-card`}>
     <div className='card-title flex flex-v-center flex-space-between'>
       <h6>{title}</h6>

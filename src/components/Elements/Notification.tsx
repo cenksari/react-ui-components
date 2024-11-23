@@ -1,11 +1,9 @@
-import React from 'react';
-
 interface IProps {
   text: string;
   color: string;
 }
 
-const Notification = ({ text, color }: IProps): React.JSX.Element => (
+const Notification = ({ text, color }: IProps): JSX.Element => (
   <span className={`notification ${color}`}>{text}</span>
 );
 

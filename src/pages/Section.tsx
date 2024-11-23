@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 
@@ -10,7 +8,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const Section = ({ anchor, title, text, children }: IProps): React.JSX.Element => (
+const Section = ({ anchor, title, text, children }: IProps): JSX.Element => (
   <Row className='margin-bottom'>
     <a aria-label={anchor} id={anchor} href={anchor} />
     <Heading type={1} color='black' text={title} />

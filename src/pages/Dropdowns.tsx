@@ -1,11 +1,9 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 import Dropdown from '../components/Elements/Dropdown';
 import DropdownItem from '../components/Elements/DropdownItem';
 
-const Dropdowns = (): React.JSX.Element => (
+const Dropdowns = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <Heading type={2} color='gray' text='Gray' />

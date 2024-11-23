@@ -1,10 +1,8 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Alert from '../components/Elements/Alert';
 import Heading from '../components/Elements/Heading';
 
-const Alerts = (): React.JSX.Element => (
+const Alerts = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='a-info' id='a-info' href='#a-info' />

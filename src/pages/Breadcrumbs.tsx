@@ -1,11 +1,9 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Breadcrumb from '../components/Elements/Breadcrumb';
 import BreadcrumbItem from '../components/Elements/BreadcrumbItem';
 import BreadcrumbDivider from '../components/Elements/BreadcrumbDivider';
 
-const Breadcrumbs = (): React.JSX.Element => (
+const Breadcrumbs = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <Breadcrumb color='gray'>

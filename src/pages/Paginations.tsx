@@ -1,10 +1,8 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
-import Pagination from '../components/Elements/Pagination';
 import Heading from '../components/Elements/Heading';
+import Pagination from '../components/Elements/Pagination';
 
-const Paginations = (): React.JSX.Element => (
+const Paginations = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='p-less' id='p-less' href='#p-less' />

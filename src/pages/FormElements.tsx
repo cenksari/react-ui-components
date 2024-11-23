@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
@@ -7,9 +7,9 @@ import Radio from '../components/Forms/Radio';
 import Switch from '../components/Forms/Switch';
 import TextArea from '../components/Forms/TextArea';
 
-const FormElements = (): React.JSX.Element => {
-  const [inputValue, setInputValue] = React.useState<string>('');
-  const [textAreaValue, setTextAreaValue] = React.useState<string>('');
+const FormElements = (): JSX.Element => {
+  const [inputValue, setInputValue] = useState<string>('');
+  const [textAreaValue, setTextAreaValue] = useState<string>('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);

@@ -1,11 +1,9 @@
-import React from 'react';
-
 interface IProps {
   text: string;
   type: string;
 }
 
-const Alert = ({ text, type }: IProps): React.JSX.Element | null => {
+const Alert = ({ text, type }: IProps): JSX.Element | null => {
   if (type === 'info') {
     return (
       <div className='alert info'>

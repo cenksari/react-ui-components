@@ -1,11 +1,9 @@
-import React from 'react';
-
-import Row from '../components/Containers/Row';
 import Tab from '../components/Elements/Tab';
+import Row from '../components/Containers/Row';
 import Tabs from '../components/Elements/Tabs';
 import TabContent from '../components/Elements/TabContent';
 
-const Tabbars = (): React.JSX.Element => (
+const Tabbars = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <Tabs color='gray'>

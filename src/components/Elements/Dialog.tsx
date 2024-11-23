@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Button from '../Buttons/Button';
 
 interface IProps {
@@ -20,7 +18,7 @@ const Dialog = ({
   actionButtonText,
   actionButtonFunction = () => {},
   closeDialogFunction,
-}: IProps): React.JSX.Element | null => {
+}: IProps): JSX.Element | null => {
   if (show) {
     return (
       <div className='modal-backdrop'>

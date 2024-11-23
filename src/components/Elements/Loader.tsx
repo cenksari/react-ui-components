@@ -1,11 +1,9 @@
-import React from 'react';
-
 interface IProps {
   type: string;
   color: string;
 }
 
-const Loader = ({ type, color }: IProps): React.JSX.Element => {
+const Loader = ({ type, color }: IProps): JSX.Element => {
   if (type === 'inline') {
     return (
       <div className={`loader ${color}`}>

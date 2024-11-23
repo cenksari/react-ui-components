@@ -1,10 +1,8 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 import Card from '../components/Elements/Card';
 
-const Cards = (): React.JSX.Element => (
+const Cards = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='c-large' id='c-large' href='#c-large' />

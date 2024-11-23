@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Carousel = (): React.JSX.Element => (
+const Carousel = (): JSX.Element => (
   <div>
     <p>test</p>
   </div>

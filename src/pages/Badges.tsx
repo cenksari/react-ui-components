@@ -1,9 +1,7 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Badge from '../components/Elements/Badge';
 
-const Badges = (): React.JSX.Element => (
+const Badges = (): JSX.Element => (
   <Row className='margin-bottom'>
     <Badge text='gray' color='gray' />
     <Badge text='yellow' color='yellow' />

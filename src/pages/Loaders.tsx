@@ -1,14 +1,14 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 import Loader from '../components/Elements/Loader';
 import Button from '../components/Buttons/Button';
 
-const Loaders = (): React.JSX.Element => {
-  const [showLoader, setShowLoader] = React.useState<boolean>(false);
+const Loaders = (): JSX.Element => {
+  const [showLoader, setShowLoader] = useState<boolean>(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timeOut = setTimeout(() => {
       setShowLoader(false);
     }, 3000);

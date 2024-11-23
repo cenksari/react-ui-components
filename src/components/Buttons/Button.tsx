@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface IProps {
   type: string;
   text: string;
@@ -16,7 +14,7 @@ const Button = ({
   rightIcon,
   color,
   onClick = () => {},
-}: IProps): React.JSX.Element => (
+}: IProps): JSX.Element => (
   <button type={type === 'button' ? 'button' : 'submit'} className={color} onClick={onClick}>
     {leftIcon && <i className='material-icons left-icon'>{leftIcon}</i>}
     {text}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface IProps {
   value: string;
   name: string;
@@ -14,7 +12,7 @@ const TextArea = ({
   rows,
   placeholder,
   onChange = () => {},
-}: IProps): React.JSX.Element => (
+}: IProps): JSX.Element => (
   <textarea
     value={value}
     name={name}

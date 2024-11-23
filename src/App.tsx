@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Menu from './pages/Menu';
 import Section from './pages/Section';
 import Introduction from './pages/Introduction';
@@ -23,7 +21,7 @@ import ButtonGroups from './pages/ButtonGroups';
 import ProfilePhotos from './pages/ProfilePhotos';
 import Notifications from './pages/Notifications';
 
-const App = (): React.JSX.Element => {
+const App = (): JSX.Element => {
   const menuState = (): void => {
     const elements = document.getElementsByClassName('menu');
 

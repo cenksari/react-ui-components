@@ -1,12 +1,10 @@
-import React from 'react';
-
 import useWindowDimensions from '../hooks/useWindowDimensions';
 
 interface IProps {
   menuState: () => void;
 }
 
-const Menu = ({ menuState }: IProps): React.JSX.Element => {
+const Menu = ({ menuState }: IProps): JSX.Element => {
   const { width } = useWindowDimensions();
 
   const handleClickScroll = (e: any) => {

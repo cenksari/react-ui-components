@@ -1,10 +1,8 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 import ProfilePhoto from '../components/Elements/ProfilePhoto';
 
-const ProfilePhotos = (): React.JSX.Element => (
+const ProfilePhotos = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='pp-big' id='pp-big' href='#pp-big' />

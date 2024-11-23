@@ -1,10 +1,8 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Button from '../components/Buttons/Button';
 import Heading from '../components/Elements/Heading';
 
-const Buttons = (): React.JSX.Element => (
+const Buttons = (): JSX.Element => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='b-gray' id='b-gray' href='#b-gray' />

@@ -1,9 +1,7 @@
-import React from 'react';
-
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 
-const Introduction = (): React.JSX.Element => (
+const Introduction = (): JSX.Element => (
   <Row className='margin-bottom'>
     <Heading type={1} color='black' text='React UI Components' />
     <p className='black'>

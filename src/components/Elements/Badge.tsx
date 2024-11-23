@@ -1,11 +1,9 @@
-import React from 'react';
-
 interface IProps {
   text: string;
   color: string;
 }
 
-const Badge = ({ text, color }: IProps): React.JSX.Element => (
+const Badge = ({ text, color }: IProps): JSX.Element => (
   <span className={`badge ${color}`}>{text}</span>
 );
 

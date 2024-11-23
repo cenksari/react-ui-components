@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface IProps {
   text: string;
   active?: boolean;
@@ -12,7 +10,7 @@ const ButtonGroupItem = ({
   active = false,
   disabled = false,
   onClick = () => {},
-}: IProps): React.JSX.Element => {
+}: IProps): JSX.Element => {
   let className = '';
 
   if (disabled) {
