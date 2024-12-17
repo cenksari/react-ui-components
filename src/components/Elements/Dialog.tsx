@@ -10,7 +10,7 @@ interface IProps {
   closeDialogFunction: () => void;
 }
 
-const Dialog = ({
+const Dialog: React.FC<IProps> = ({
   show = false,
   color,
   title,
@@ -18,7 +18,7 @@ const Dialog = ({
   actionButtonText,
   actionButtonFunction = () => {},
   closeDialogFunction,
-}: IProps): JSX.Element | null => {
+}) => {
   if (show) {
     return (
       <div className='modal-backdrop'>

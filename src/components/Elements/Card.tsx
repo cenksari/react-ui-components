@@ -10,7 +10,7 @@ interface IProps {
   button2Text?: string;
 }
 
-const Card = ({
+const Card: React.FC<IProps> = ({
   size,
   color,
   title,
@@ -18,7 +18,7 @@ const Card = ({
   image,
   button1Text,
   button2Text,
-}: IProps): JSX.Element => (
+}) => (
   <div className={`card ${size}-card`}>
     <div className='card-title flex flex-v-center flex-space-between'>
       <h6>{title}</h6>

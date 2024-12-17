@@ -7,14 +7,14 @@ interface IProps {
   onClick?: () => void;
 }
 
-const Button = ({
+const Button: React.FC<IProps> = ({
   type = 'button',
   text,
   leftIcon,
   rightIcon,
   color,
   onClick = () => {},
-}: IProps): JSX.Element => (
+}) => (
   <button type={type === 'button' ? 'button' : 'submit'} className={color} onClick={onClick}>
     {leftIcon && <i className='material-icons left-icon'>{leftIcon}</i>}
     {text}

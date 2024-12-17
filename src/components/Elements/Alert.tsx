@@ -3,7 +3,7 @@ interface IProps {
   type: string;
 }
 
-const Alert = ({ text, type }: IProps): JSX.Element | null => {
+const Alert: React.FC<IProps> = ({ text, type }) => {
   if (type === 'info') {
     return (
       <div className='alert info'>

@@ -2,7 +2,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const TabContent = ({ children }: IProps): JSX.Element => (
+const TabContent: React.FC<IProps> = ({ children }) => (
   <div className='tab-content'>{children}</div>
 );
 

@@ -1,7 +1,7 @@
 import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 
-const Headings = (): JSX.Element => (
+const Headings: React.FC = () => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='h1' id='h1' href='#h1' />

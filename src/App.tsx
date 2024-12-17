@@ -21,7 +21,7 @@ import ButtonGroups from './pages/ButtonGroups';
 import ProfilePhotos from './pages/ProfilePhotos';
 import Notifications from './pages/Notifications';
 
-const App = (): JSX.Element => {
+const App: React.FC = () => {
   const menuState = (): void => {
     const elements = document.getElementsByClassName('menu');
 

@@ -4,7 +4,7 @@ interface IProps {
   onClick?: () => void;
 }
 
-const DropdownItem = ({ text, active = false, onClick = () => {} }: IProps): JSX.Element => (
+const DropdownItem: React.FC<IProps> = ({ text, active = false, onClick = () => {} }) => (
   <button type='button' className={active ? 'active' : 'passive'} onClick={onClick}>
     {text}
   </button>

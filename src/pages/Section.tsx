@@ -8,7 +8,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const Section = ({ anchor, title, text, children }: IProps): JSX.Element => (
+const Section: React.FC<IProps> = ({ anchor, title, text, children }) => (
   <Row className='margin-bottom'>
     <a aria-label={anchor} id={anchor} href={anchor} />
     <Heading type={1} color='black' text={title} />

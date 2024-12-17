@@ -2,7 +2,7 @@ import Row from '../components/Containers/Row';
 import Heading from '../components/Elements/Heading';
 import Card from '../components/Elements/Card';
 
-const Cards = (): JSX.Element => (
+const Cards: React.FC = () => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='c-large' id='c-large' href='#c-large' />

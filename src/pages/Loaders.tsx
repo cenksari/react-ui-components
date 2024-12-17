@@ -5,7 +5,7 @@ import Heading from '../components/Elements/Heading';
 import Loader from '../components/Elements/Loader';
 import Button from '../components/Buttons/Button';
 
-const Loaders = (): JSX.Element => {
+const Loaders: React.FC = () => {
   const [showLoader, setShowLoader] = useState<boolean>(false);
 
   useEffect(() => {

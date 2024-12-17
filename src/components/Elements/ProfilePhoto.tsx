@@ -5,7 +5,7 @@ interface IProps {
   image?: string;
 }
 
-const ProfilePhoto = ({ color, size = 'small', text, image }: IProps): JSX.Element => {
+const ProfilePhoto: React.FC<IProps> = ({ color, size = 'small', text, image }) => {
   if (!image) {
     return (
       <div className='profile-photo'>

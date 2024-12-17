@@ -3,7 +3,7 @@ interface IProps {
   color: string;
 }
 
-const Loader = ({ type, color }: IProps): JSX.Element => {
+const Loader: React.FC<IProps> = ({ type, color }) => {
   if (type === 'inline') {
     return (
       <div className={`loader ${color}`}>

@@ -2,7 +2,7 @@ import Row from '../components/Containers/Row';
 import ButtonGroup from '../components/Buttons/ButtonGroup';
 import ButtonGroupItem from '../components/Buttons/ButtonGroupItem';
 
-const ButtonGroups = (): JSX.Element => (
+const ButtonGroups: React.FC = () => (
   <>
     <Row className='margin-bottom'>
       <ButtonGroup color='gray'>

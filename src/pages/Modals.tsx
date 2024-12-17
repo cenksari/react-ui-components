@@ -4,7 +4,7 @@ import Row from '../components/Containers/Row';
 import Button from '../components/Buttons/Button';
 import Modal from '../components/Elements/Modal';
 
-const Modals = (): JSX.Element => {
+const Modals: React.FC = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
 
   return (

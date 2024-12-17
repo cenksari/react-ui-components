@@ -3,7 +3,7 @@ interface IProps {
   className?: string;
 }
 
-const Row = ({ children, className }: IProps): JSX.Element => (
+const Row: React.FC<IProps> = ({ children, className }) => (
   <div className={className ? `row ${className}` : 'row'}>{children}</div>
 );
 

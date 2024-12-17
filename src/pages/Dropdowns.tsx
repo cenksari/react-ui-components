@@ -3,7 +3,7 @@ import Heading from '../components/Elements/Heading';
 import Dropdown from '../components/Elements/Dropdown';
 import DropdownItem from '../components/Elements/DropdownItem';
 
-const Dropdowns = (): JSX.Element => (
+const Dropdowns: React.FC = () => (
   <>
     <Row className='margin-bottom'>
       <Heading type={2} color='gray' text='Gray' />

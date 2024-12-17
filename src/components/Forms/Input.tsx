@@ -6,13 +6,7 @@ interface IProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input = ({
-  name,
-  type,
-  placeholder,
-  value = '',
-  onChange = () => {},
-}: IProps): JSX.Element => (
+const Input: React.FC<IProps> = ({ name, type, placeholder, value = '', onChange = () => {} }) => (
   <input
     type={type}
     name={name}

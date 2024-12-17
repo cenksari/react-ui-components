@@ -3,7 +3,7 @@ interface IProps {
   color: string;
 }
 
-const Badge = ({ text, color }: IProps): JSX.Element => (
+const Badge: React.FC<IProps> = ({ text, color }) => (
   <span className={`badge ${color}`}>{text}</span>
 );
 

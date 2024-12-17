@@ -5,12 +5,12 @@ interface IProps {
   onClick?: () => void;
 }
 
-const ButtonGroupItem = ({
+const ButtonGroupItem: React.FC<IProps> = ({
   text,
   active = false,
   disabled = false,
   onClick = () => {},
-}: IProps): JSX.Element => {
+}) => {
   let className = '';
 
   if (disabled) {

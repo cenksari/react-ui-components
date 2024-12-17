@@ -3,7 +3,7 @@ interface IProps {
   color: string;
 }
 
-const Tabs = ({ children, color }: IProps): JSX.Element => (
+const Tabs: React.FC<IProps> = ({ children, color }) => (
   <div className='tabs'>
     <div className={`tab-bar ${color}`}>{children}</div>
   </div>

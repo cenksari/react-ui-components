@@ -6,7 +6,7 @@ interface IProps {
   value: string;
 }
 
-const Radio = ({ name, checked = false, color, description, value }: IProps): JSX.Element => (
+const Radio: React.FC<IProps> = ({ name, checked = false, color, description, value }) => (
   <div className='radio-container'>
     <label className={`radio ${color}`}>
       <input name={name} type='radio' defaultChecked={checked} value={value} />

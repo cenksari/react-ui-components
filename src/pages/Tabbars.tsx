@@ -3,7 +3,7 @@ import Row from '../components/Containers/Row';
 import Tabs from '../components/Elements/Tabs';
 import TabContent from '../components/Elements/TabContent';
 
-const Tabbars = (): JSX.Element => (
+const Tabbars: React.FC = () => (
   <>
     <Row className='margin-bottom'>
       <Tabs color='gray'>

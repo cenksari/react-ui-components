@@ -6,13 +6,13 @@ interface IProps {
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
-const TextArea = ({
+const TextArea: React.FC<IProps> = ({
   value = '',
   name,
   rows,
   placeholder,
   onChange = () => {},
-}: IProps): JSX.Element => (
+}) => (
   <textarea
     value={value}
     name={name}

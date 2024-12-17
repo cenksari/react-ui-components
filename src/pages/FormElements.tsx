@@ -7,7 +7,7 @@ import Radio from '../components/Forms/Radio';
 import Switch from '../components/Forms/Switch';
 import TextArea from '../components/Forms/TextArea';
 
-const FormElements = (): JSX.Element => {
+const FormElements: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>('');
   const [textAreaValue, setTextAreaValue] = useState<string>('');
 

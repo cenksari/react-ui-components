@@ -3,7 +3,7 @@ import Breadcrumb from '../components/Elements/Breadcrumb';
 import BreadcrumbItem from '../components/Elements/BreadcrumbItem';
 import BreadcrumbDivider from '../components/Elements/BreadcrumbDivider';
 
-const Breadcrumbs = (): JSX.Element => (
+const Breadcrumbs: React.FC = () => (
   <>
     <Row className='margin-bottom'>
       <Breadcrumb color='gray'>

@@ -4,7 +4,7 @@ interface IProps {
   closeModalFunction: () => void;
 }
 
-const Modal = ({ show = false, children, closeModalFunction }: IProps): JSX.Element | null => {
+const Modal: React.FC<IProps> = ({ show = false, children, closeModalFunction }) => {
   if (show) {
     return (
       <div className='modal-backdrop'>

@@ -7,7 +7,7 @@ interface IProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Slider = ({ name, color, min, max, value, onChange = () => {} }: IProps): JSX.Element => (
+const Slider: React.FC<IProps> = ({ name, color, min, max, value, onChange = () => {} }) => (
   <input
     type='range'
     className={color}

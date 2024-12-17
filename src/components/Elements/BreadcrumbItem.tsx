@@ -4,7 +4,7 @@ interface IProps {
   onClick?: () => void;
 }
 
-const BreadcrumbItem = ({ text, disabled = false, onClick = () => {} }: IProps): JSX.Element => (
+const BreadcrumbItem: React.FC<IProps> = ({ text, disabled = false, onClick = () => {} }) => (
   <button type='button' className={disabled ? 'disabled' : 'operational'} onClick={onClick}>
     {text}
   </button>

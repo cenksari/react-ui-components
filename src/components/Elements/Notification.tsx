@@ -3,7 +3,7 @@ interface IProps {
   color: string;
 }
 
-const Notification = ({ text, color }: IProps): JSX.Element => (
+const Notification: React.FC<IProps> = ({ text, color }) => (
   <span className={`notification ${color}`}>{text}</span>
 );
 

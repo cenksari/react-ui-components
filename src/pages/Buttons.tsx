@@ -2,7 +2,7 @@ import Row from '../components/Containers/Row';
 import Button from '../components/Buttons/Button';
 import Heading from '../components/Elements/Heading';
 
-const Buttons = (): JSX.Element => (
+const Buttons: React.FC = () => (
   <>
     <Row className='margin-bottom'>
       <a aria-label='b-gray' id='b-gray' href='#b-gray' />

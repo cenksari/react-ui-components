@@ -4,7 +4,7 @@ interface IProps {
   menuState: () => void;
 }
 
-const Menu = ({ menuState }: IProps): JSX.Element => {
+const Menu: React.FC<IProps> = ({ menuState }) => {
   const { width } = useWindowDimensions();
 
   const handleClickScroll = (e: any) => {

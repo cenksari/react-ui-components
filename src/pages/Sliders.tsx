@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Row from '../components/Containers/Row';
 import Slider from '../components/Forms/Slider';
 
-const Sliders = (): JSX.Element => {
+const Sliders: React.FC = () => {
   const [value1, setValue1] = useState<number>(1);
   const [value2, setValue2] = useState<number>(2);
   const [value3, setValue3] = useState<number>(3);

@@ -1,4 +1,4 @@
-const Carousel = (): JSX.Element => (
+const Carousel: React.FC = () => (
   <div>
     <p>test</p>
   </div>

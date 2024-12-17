@@ -5,7 +5,7 @@ import Button from '../components/Buttons/Button';
 import Dialog from '../components/Elements/Dialog';
 import Heading from '../components/Elements/Heading';
 
-const Dialogs = (): JSX.Element => {
+const Dialogs: React.FC = () => {
   const [dialogActionShow, setDialogActionShow] = useState<boolean>(false);
   const [dialogClassicShow, setDialogClassicShow] = useState<boolean>(false);
 

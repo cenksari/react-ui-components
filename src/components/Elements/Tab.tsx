@@ -4,7 +4,7 @@ interface IProps {
   onClick?: () => void;
 }
 
-const Tab = ({ text, active = false, onClick = () => {} }: IProps): JSX.Element => (
+const Tab: React.FC<IProps> = ({ text, active = false, onClick = () => {} }) => (
   <div className='tab'>
     <button type='button' className={active ? 'active' : 'passive'} onClick={onClick}>
       {text}

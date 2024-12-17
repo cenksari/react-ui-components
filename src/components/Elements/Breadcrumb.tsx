@@ -3,7 +3,7 @@ interface IProps {
   children: React.ReactNode;
 }
 
-const Breadcrumb = ({ color, children }: IProps): JSX.Element => (
+const Breadcrumb: React.FC<IProps> = ({ color, children }) => (
   <div className={`breadcrumb ${color}`}>{children}</div>
 );
 
